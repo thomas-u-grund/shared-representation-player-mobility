@@ -96,11 +96,11 @@ at$APP_VERS <- table_md("Table B1. Versions of players.csv used", c("Version", "
   lapply(seq_len(nrow(mf)), function(i) c(mf$version[i], fmtd(mf$last_modified[i]), substr(mf$sha256[i], 1, 12), roles[[mf$version[i]]])),
   "Earlier-label sources are releases dated before the window and other than the baseline, used to fill a missing label. Look-ahead releases are dated after the window and used only in a sensitivity analysis.")
 at$APP_OTHER <- table_md("Table B2. Other inputs", c("Input", "Source", "Role"), list(
-  c("transfers table (transfers.gz)", "Cariboo, transfermarkt-datasets (GitHub); copy SHA-256 90326983dc3e", "Transfer events, move dates, fees and earlier club-to-club flows"),
-  c("games table (games.gz)", "Cariboo, transfermarkt-datasets (GitHub); copy SHA-256 142561989017", "Prior-season points, league membership of clubs"),
+  c("transfers table (transfers.gz)", "Cariboo, transfermarkt-datasets (github.com/dcaribou/transfermarkt-datasets); copy SHA-256 90326983dc3e", "Transfer events, move dates, fees and earlier club-to-club flows"),
+  c("games table (games.gz)", "Cariboo, transfermarkt-datasets (github.com/dcaribou/transfermarkt-datasets); copy SHA-256 142561989017", "Prior-season points, league membership of clubs"),
   c("appearances table", "Cariboo, transfermarkt-datasets (GitHub)", "Pre-window league appearances and minutes"),
-  c("Club Elo ratings", "xgabora/Club-Football-Match-Data (GitHub), from ClubElo", "Pre-window Elo of origin and candidate clubs"),
-  c("EA player ratings", "FIFA 23 and FC 24 extracts (GitHub); sofifa data set (Kaggle, jmacd745)", "Player rating gap to the candidate club’s squad")),
+  c("Club Elo ratings", "xgabora/Club-Football-Match-Data (GitHub, data/EloRatings.csv), from ClubElo", "Pre-window Elo of origin and candidate clubs"),
+  c("EA player ratings", "FIFA 23 extract (github.com/MithileshAnavkar/FOOTEM, Data/players_fifa23.csv); FC 24 extract (github.com/stephensoccer/EA-Sports-FC-24-Players-Data); sofifa data set (kaggle.com/datasets/jmacd745/sofifa-data-set)", "Player rating gap to the candidate club’s squad")),
   "Retrieval dates of the transfer and games copies were not recorded; the checksums identify the files used. Source addresses are in coach_retry/perf/README.md.")
 app_w <- function(i, n) { if (n == 5 && i == 3) return(c(1.5, 1.0, 1.4, 1.2, 1.4)); if (i == 5) return(c(.8, 1.3, 1.1, 3.3))
   switch(as.character(n), `4` = c(1.0, 2.0, 1.6, 1.9), `3` = if (i != 6) c(2.3, 1.6, 2.6) else c(1.8, 2.6, 2.1), `2` = c(5.4, 1.0), `5` = c(.9, .6, 1.5, 1.7, 1.8)) }
