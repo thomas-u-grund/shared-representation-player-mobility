@@ -31,7 +31,7 @@ Rscript R/run_all.R            # about 15 minutes
 This re-estimates every model in the paper (club and league models, timing and fee, contract status, own-versus-matched agencies,
 recency, choice sets and the Elo decomposition, league specifications, sample variants, the summer–January comparison), rebuilds the
 tables and figures, renders the manuscript and online appendix (only if `agency_paper/manuscript.md` is present; the paper sources are not part of this repository), and compares each estimate with the stored one
-(`agency_paper/*.csv`, `revision/*.csv`). Odds ratios agree to within 1e-5 relative; events and alternatives are identical.
+(`agency_paper/*.csv`, `revision/*.csv`, which are the R results the manuscript reports; the first-version `*_archived` files are older stored estimates). Odds ratios agree to within 1e-5 relative; events and alternatives are identical.
 `R/analyse.R` alone (42 summer models) takes a few minutes; `R/reproduce_summer.R` runs it and compares.
 
 **From the third-party sources:**
