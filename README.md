@@ -13,47 +13,48 @@ January windows in between.
 | `revision/` | Scripts and result tables for the additional analyses: contract status and fee, twin-agency comparison, recency, choice sets, league specifications, sample variants (`README.md` explains each script) |
 | `coach_retry/`, `winter_recovery/`, `winter_proxy/` | Builders for the model-ready inputs, with their source lists and checksums |
 | `raw/kaggle/download_manifest.csv` | Version, archive timestamp, URL and SHA-256 of every historical `players.csv` used |
-| `R/` | R implementation of the summer club and league models (`analyse.R`, `clogit_helpers.R`) and the check against the stored results (`reproduce_summer.R`) |
+| `R/` | The R pipeline: estimation (`analyse.R`, `rev*.R`, `compare_windows.R`, `clogit_helpers.R`), tables and figures (`make_tables.R`), rendering (`render_manuscript.R`), builders (`build/`, `rebuild_data.R`) and the driver `run_all.R` |
 | `reproduce_summer.py` | Python version of the same check |
 | `reproduce.py`, `rebuild_data.py` | Full pipeline from the third-party sources (see below) |
 | `make_pseudonymised_data.py` | How the pseudonymised inputs were produced |
 
 The Online Appendix to the paper documents the twin-agency matching and lists every data file and version used.
 
-## Reproducing the summer results
+## Reproducing the results
 
-In R (4.x; packages `data.table`, `survival`, `readr`, `stringi`, `jsonlite`):
+The pipeline is implemented in R (4.x; packages `data.table`, `survival`, `readr`, `stringi`, `jsonlite`, `ggplot2`, `xml2`, `zip`;
+`pandoc` and LibreOffice for the Word and PDF files). A Python implementation of the estimation layer is kept as an independent check.
 
-```sh
-Rscript R/reproduce_summer.R
-```
-
-`R/analyse.R` re-estimates all 42 club and league models for the main sample (2,000 club events, 2,412 league events) on
-`data_pseudonymised/`, using `survival::clogit` with cluster-robust variances, and `R/reproduce_summer.R` compares them with the
-stored estimates. The R estimates agree with the stored ones to within 0.0005% in the odds ratios and match exactly in
-events and alternatives. The run takes a few minutes.
-
-The same models also exist in Python (the original implementation, a hand-written conditional logit):
+**From the pseudonymised data** (`data_pseudonymised/`, about 37 MB):
 
 ```sh
-python3.12 -m venv .venv && source .venv/bin/activate
-python -m pip install -r requirements.txt
-python reproduce_summer.py
+Rscript R/run_all.R            # about 15 minutes
 ```
 
-The two implementations agree, so the R version doubles as an independent check of the Python estimator.
+This re-estimates every model in the paper (club and league models, timing and fee, contract status, own-versus-matched agencies,
+recency, choice sets and the Elo decomposition, league specifications, sample variants, the summer–January comparison), rebuilds the
+tables and figures, renders the manuscript and online appendix (only if `agency_paper/manuscript.md` is present; the paper sources are not part of this repository), and compares each estimate with the stored one
+(`agency_paper/*.csv`, `revision/*.csv`). Odds ratios agree to within 1e-5 relative; events and alternatives are identical.
+`R/analyse.R` alone (42 summer models) takes a few minutes; `R/reproduce_summer.R` runs it and compares.
+
+**From the third-party sources:**
+
+```sh
+Rscript R/rebuild_data.R <root> <output_dir>
+```
+
+rebuilds every model input (event panel, performance and candidate tables, winter rosters, transfers and backcast, extended
+sample) from the archived raw files described in `raw/kaggle/download_manifest.csv`. Compared with the shipped tables, the
+outputs are byte-identical apart from float formatting in the last digit and the two fitted-model files, which differ by
+1e-8 or less (optimiser tolerance). The builders are in `R/build/`.
 
 Player identifiers and representative labels in `data_pseudonymised/` are random codes, player names are removed, and the
-mapping was not kept. The summer–January comparison and the additional analyses in `revision/` also read the original
-representative labels or raw files, which the pseudonymised data do not carry, so they currently run only in Python on the
-full rebuild. They are being ported to R.
+mapping was not kept. Two analysis outputs depend on the labels' sort order only (the anonymised worked example in the appendix
+picks its focal agency among equals), so they can differ in which agency is shown but not in any estimate.
 
-## Full rebuild from the sources
-
-`rebuild_data.py` rebuilds every model input from the raw archives, and `reproduce.py` then re-estimates the main and
-first-version samples and the seasonal comparison. Both need the third-party files below, placed as described in
-`coach_retry/perf/README.md`, `winter_recovery/README.md` and `raw/kaggle/download_manifest.csv`. In our run, every rebuilt
-table was identical to the stored one. `revision/README.md` gives the order in which the additional scripts run.
+Python versions of the estimator, the seasonal comparison, the revision scripts and the builders (`analyse.py`, `compare_windows.py`,
+`revision/`, `rebuild_data.py`, `reproduce.py`) remain for comparison; `python reproduce_summer.py` (with `requirements.txt`) checks
+the Python estimator against the stored results.
 
 ## Data sources
 
