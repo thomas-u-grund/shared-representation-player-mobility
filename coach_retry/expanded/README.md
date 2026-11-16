@@ -46,7 +46,7 @@ Download Kaggle davidcariboo/player-scores players.csv releases 240,
 are 23 May 2023, 31 May 2024, 11 April 2025 and 26 May 2026. Download
 transfers.csv.gz and games.csv.gz from dcaribou/transfermarkt-datasets
 as transfers.gz and games.gz. Work in the directory of these inputs.
-Run python count.py and python fit.py (NumPy and SciPy for fitting).
+Run R/build/count.R and R/build/fit.R from this folder's working copy (see R/rebuild_data.R for the staging).
 
 The 2022 release tested (150, 28 April) lacks the agent field.
 The 2026 outcome source is incomplete, especially in August, and is

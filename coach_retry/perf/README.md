@@ -35,7 +35,7 @@ Transfermarkt player and club IDs. No model has been fitted.
 
 Pass the expanded panel input folder (including its underlying Kaggle
 240.data, 435.data, 600.data snapshots and games.gz), the performance
-source folder and an output folder to build_performance.py. Source
+source folder and an output folder to R/build/build_performance.R. Source
 folder files and download locations:
 
 - appearances.gz: appearances.csv.gz from dcaribou/transfermarkt-datasets

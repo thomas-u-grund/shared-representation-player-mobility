@@ -41,4 +41,4 @@ data_325 and data_547. Use the original zip or CSV bytes, respectively.
 The verified release links are in sources.csv and the source digests in
 snapshot_checksums.txt. Place the public dcaribou transfer and games
 files in a second directory as transfers.gz and games.gz.
-Run build_winter.py with those two directories as arguments.
+Run R/build/build_winter.R with those two directories as arguments.

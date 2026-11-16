@@ -37,12 +37,12 @@ coverage even within the same snapshot date. Use the directly observed
 
 ## Reproduce
 
-Run evaluate.py from this directory with the directories containing
+Run R/build/evaluate_winter_proxy.R from this directory with the directories containing
 the Kaggle downloads (data_355, data_566, data_603, data_606), the
 dcaribou games.gz and transfers.gz files, and the extracted December
 winter roster package. Repeat from version_606_sensitivity using its
 proxy_sources.csv to reproduce the alternate results (pass the same
-input directories and call ../evaluate.py).
+input directories and call R/build/evaluate_winter_proxy.R).
 
 Kaggle archive root
 https://www.kaggle.com/datasets/davidcariboo/player-scores/versions
