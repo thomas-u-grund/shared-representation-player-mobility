@@ -5,6 +5,8 @@ Sociology of Sport*). The paper asks whether a player's destination club is pred
 representative at that club, using pre-window rosters for 14 European men's top flights, summers 2023–2025 and the
 January windows in between.
 
+**Terminology.** The paper calls the comparison agencies "matched agencies". In the code and result files they are called "twins" (for example `rev2_twin.R` and the model names `twin agencies (placebo)`); the two terms refer to the same thing, and the paper does not treat the comparison as a placebo.
+
 ## What is in this repository
 
 | Path | Contents |
