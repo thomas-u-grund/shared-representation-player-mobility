@@ -1,0 +1,39 @@
+block,label,events,odds_ratio,lo,hi,source
+mechanism,Contract ends by 30 June of the window year,2000,1.5754320439994154,1.2543561282693347,1.9786933465894028,rev6_misc_results.csv
+mechanism,Contract runs one more year,2000,1.4257174901938774,1.0189414787242286,1.9948843032572838,rev6_misc_results.csv
+mechanism,Contract runs longer,2000,1.1311241511952541,0.8846614527421504,1.446250247991871,rev6_misc_results.csv
+mechanism,Ratio: expiring contract to longer contract,2000,1.3928020565511428,1.0259372171103662,1.890854076038852,rev6_misc_results.csv
+mechanism,"30 June or 1 July, no fee",2000,1.7448625116841718,1.2864217785179224,2.3666772714221276,rev1_timing_results.csv
+mechanism,"30 June or 1 July, fee paid",2000,1.3619586865741462,0.8277199322869977,2.2410134051134674,rev1_timing_results.csv
+mechanism,"Other dates, no fee",2000,1.3442101016938157,1.0658162970559855,1.6953210440549165,rev1_timing_results.csv
+mechanism,"Other dates, fee paid",2000,1.2222636882634332,0.9294658599106884,1.6072978988070434,rev1_timing_results.csv
+mechanism,Excluding moves to a former club,1825,1.3840756116830257,1.1772600494659056,1.6272235685945793,rev1_timing_results.csv
+mechanism,Own agency (twin-agency sample),1674,1.3529230873367102,1.1437984469834306,1.6002827115879195,rev2_identification_results.csv
+mechanism,Twin agencies with similar portfolios (placebo),1674,0.9722685747778267,0.8469306374783689,1.1161553729063793,rev2_identification_results.csv
+mechanism,Difference: own minus twin agencies,1674,1.3915116897055597,1.136116220999473,1.7043192824795697,rev2_identification_results.csv
+mechanism,Closest single twin (placebo),1674,1.102905276134804,0.9530416604799824,1.276334601693456,rev2c_closest_twin_results.csv
+mechanism,Difference: own minus closest single twin,1674,1.23032155463885,0.978660438312058,1.546696963064831,rev2c_closest_twin_results.csv
+mechanism,"Own agency, contract expiring",705,1.534986887592105,1.2175540465845585,1.9351787723010636,rev2b_twin_by_contract_results.csv
+mechanism,"Own agency, contract runs longer",735,1.1266571305284165,0.8845326759381946,1.435058674824151,rev2b_twin_by_contract_results.csv
+mechanism,"Twin agencies, contract runs longer (placebo)",735,0.9407298656476738,0.7327504158582567,1.2077409455782275,rev2b_twin_by_contract_results.csv
+mechanism,"Difference, contract runs longer: own minus twin agencies",735,1.1976415033371304,0.8687207729973735,1.6511003478904474,rev2b_twin_by_contract_results.csv
+mechanism,"Twin agencies, contract expiring (placebo)",705,0.9457519213752945,0.7708407296275354,1.1603521485135475,rev2b_twin_by_contract_results.csv
+mechanism,"Difference, contract expiring: own minus twin agencies",705,1.6230333271329296,1.1906330865861798,2.212467644870473,rev2b_twin_by_contract_results.csv
+mechanism,Recently placed co-client,2000,1.4141404663572854,1.181958680179816,1.691931614974023,rev2_identification_results.csv
+mechanism,Long-standing co-client,2000,1.1494305164289802,0.8691169087067184,1.5201528112761928,rev2_identification_results.csv
+sensitivity,"First-version linkage (1,514 events)",1514,1.3132610124592698,1.1026322832365838,1.5641247885316085,rev8_fill_results.csv
+sensitivity,"First-version linkage, omit 30 June and 1 July",1127,1.1921160547972118,0.9642063623894831,1.473896816635204,rev8_fill_results.csv
+sensitivity,"Player-level linkage, baseline labels only",1781,1.391524865610674,1.17638139566771,1.6460150243312404,rev8_fill_results.csv
+sensitivity,"Main sample, omit 30 June and 1 July",1539,1.3108917067893755,1.0839904614792084,1.585287996523688,rev8_fill_results.csv
+sensitivity,"Main sample, no club fixed effects",2000,1.3559849900502996,1.1509008209665084,1.5976140252446807,rev8_fill_results.csv
+sensitivity,"Main sample, harmonised representative labels",2000,1.3644171187037033,1.1552786813232916,1.6114155864793966,rev8_fill_results.csv
+sensitivity,Adding look-ahead labels from later releases,2114,1.3701375813497958,1.1600961781909958,1.618208065088546,rev8_fill_results.csv
+sensitivity,Tier and affordability controls,2000,1.3139318421514978,1.1280727396300136,1.5304127341875673,rev4_choiceset_results.csv
+sensitivity,Alternatives within a 4.5-fold squad-value gap,1816,1.3348397670299246,1.1383617643009678,1.5652293141966596,rev4_choiceset_results.csv
+sensitivity,"Same 1,643 events, all clubs as alternatives",1643,1.2900910648950457,1.065634759462515,1.561824950756571,rev4b_elo_results.csv
+sensitivity,"Same 1,643 events, all clubs, + tier controls",1643,1.1774809589978998,0.9927108223899098,1.3966417787858563,rev4b_elo_results.csv
+sensitivity,"Same 1,643 events, alternatives within 200 Elo",1643,1.2496633195567977,1.0389311184352064,1.503139509958868,rev4b_elo_results.csv
+sensitivity,"Same 1,643 events, within 200 Elo, + tier controls",1643,1.1765337003682959,0.9875969065586155,1.4016159213436727,rev4b_elo_results.csv
+league,"League model, first-version sample (per doubling)",1787,1.279552251898131,1.2138570203015049,1.348802979226423,rev5_league_results.csv
+league,"League model, main sample, nationality-by-league effects (per doubling)",2412,1.238526146828215,1.1807511949828917,1.2991280660100206,rev5_league_results.csv
+league,"League model, main sample, agency concentration (per 10 pp of clients), nationality-by-league effects",2412,1.1435071105977501,1.1144879244785906,1.1732819021788643,rev5_league_results.csv

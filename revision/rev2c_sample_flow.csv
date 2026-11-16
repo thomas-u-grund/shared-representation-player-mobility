@@ -1,0 +1,6 @@
+step,events
+Events in the club model,2000
+"Representative has fewer than three clients on pre-window rosters, so no twin is defined",-326
+Fewer than three agencies meet the size rule,0
+Dropped after twin restriction (single-alternative or never-chosen clubs),0
+Events in the twin model,1674

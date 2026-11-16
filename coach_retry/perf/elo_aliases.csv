@@ -1,0 +1,128 @@
+country,transfermarkt,elo
+BEL,Royal Antwerp Football Club,Antwerp
+BEL,KRC Genk,Genk
+BEL,KAA Gent,Gent
+BEL,Royal Charleroi Sporting Club,Charleroi
+BEL,Club Brugge KV,Club Brugge
+BEL,Standard Liège,Standard
+BEL,KV Mechelen,Mechelen
+BEL,Union Saint-Gilloise,St. Gilloise
+BEL,Sint-Truidense VV,St Truiden
+BEL,RSC Anderlecht,Anderlecht
+BEL,FCV Dender EH,Dender
+BEL,KVC Westerlo,Westerlo
+BEL,OH Leuven,Oud-Heverlee Leuven
+DEN,Aalborg Boldspilklub,Aalborg
+DEN,Viborg Fodsports Forening,Viborg
+DEN,Silkeborg IF,Silkeborg
+DEN,Football Club København,FC Kobenhavn
+DEN,FC Copenhagen,FC Kobenhavn
+DEN,Bröndby IF,Brondby
+DEN,Lyngby Boldklubben af 1921,Lyngby
+DEN,Vejle Boldklub,Vejle
+DEN,Sønderjyske Fodbold,SonderjyskE
+DEN,Aarhus Gymnastik Forening,Aarhus
+ESP,Deportivo Alavés,Alaves
+ESP,CD Leganés,Leganes
+ESP,Atlético de Madrid,Ath Madrid
+ESP,Real Betis Balompié,Betis
+ESP,RCD Mallorca,Mallorca
+ESP,CA Osasuna,Osasuna
+ESP,Real Valladolid CF,Valladolid
+ESP,Rayo Vallecano,Vallecano
+ESP,UD Las Palmas,Las Palmas
+ESP,Athletic Bilbao,Ath Bilbao
+ESP,Real Sociedad,Sociedad
+ESP,RCD Espanyol Barcelona,Espanol
+ESP,Celta de Vigo,Celta
+ESP,UD Almería,Almeria
+FRA,Olympique Lyon,Lyon
+FRA,Angers SCO,Angers
+FRA,Stade Reims,Reims
+FRA,Olympique Marseille,Marseille
+FRA,Stade Rennais FC,Rennes
+FRA,AJ Auxerre,Auxerre
+FRA,Stade Brestois 29,Brest
+FRA,Paris Saint-Germain,Paris SG
+FRA,AS Saint-Étienne,St Etienne
+FRA,RC Strasbourg Alsace,Strasbourg
+FRA,Montpellier HSC,Montpellier
+ENG,Leicester City,Leicester
+ENG,Brighton & Hove Albion,Brighton
+ENG,Tottenham Hotspur,Tottenham
+ENG,Manchester City,Man City
+ENG,West Ham United,West Ham
+ENG,Wolverhampton Wanderers,Wolves
+ENG,Ipswich Town,Ipswich
+ENG,Nottingham Forest,Nott'm Forest
+ENG,Newcastle United,Newcastle
+ENG,Manchester United,Man United
+ENG,Leeds United,Leeds
+ENG,Luton Town,Luton
+GRE,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,PAOK
+GRE,Athlitiki Enosi Konstantinoupoleos,AEK
+GRE,Panathinaikos Athlitikos Omilos,Panathinaikos
+GRE,APO Levadiakos Football Club,Levadeiakos
+GRE,APS Atromitos Athinon,Atromitos
+GRE,Athens Kallithea Football Club,Kalithea
+GRE,Panserraikos Serres,Panserraikos
+GRE,PAS Lamia 1964,Lamia
+GRE,Aris Thessalonikis,Aris
+GRE,Volou Neos Podosferikos Syllogos,NFC Volos
+GRE,Panetolikos Agrinio,Panetolikos
+GRE,Omilos Filathlon Irakliou FC,OFI
+GRE,A.G.S Asteras Tripolis,Asteras Tripolis
+GRE,Olympiakos Syndesmos Filathlon Peiraios,Olympiakos
+GRE,Olympiacos,Olympiakos
+ITA,US Lecce,Lecce
+ITA,Bologna Football Club 1909,Bologna
+ITA,Associazione Sportiva Roma,Roma
+ITA,Parma Calcio 1913,Parma
+ITA,Genoa CFC,Genoa
+ITA,Hellas Verona,Verona
+ITA,Società Sportiva Lazio S.p.A.,Lazio
+ITA,ACF Fiorentina,Fiorentina
+ITA,Inter Milan,Inter
+ITA,Atalanta BC,Atalanta
+GER,Bayer 04 Leverkusen,Leverkusen
+GER,Borussia Dortmund,Dortmund
+GER,Borussia Mönchengladbach,M'gladbach
+GER,1. Fußballclub Heidenheim 1846,Heidenheim
+GER,Eintracht Frankfurt,Ein Frankfurt
+GER,1.FSV Mainz 05,Mainz
+GER,TSG 1899 Hoffenheim,Hoffenheim
+GER,1.FC Union Berlin,Union Berlin
+NED,PEC Zwolle,Zwolle
+NED,Heracles Almelo,Heracles
+NED,Feyenoord Rotterdam,Feyenoord
+NED,RKC Waalwijk,Waalwijk
+NED,Fortuna Sittard,For Sittard
+NED,Fortuna Sittardia Combinatie,For Sittard
+NED,NEC Nijmegen,Nijmegen
+NED,Ajax Amsterdam,Ajax
+POR,SC Braga,Sp Braga
+POR,Avs Futebol,AVS
+POR,GD Estoril Praia,Estoril
+POR,Vitória Guimarães SC,Guimaraes
+POR,CF Estrela Amadora,Est Amadora
+POR,SL Benfica,Benfica
+POR,Sporting CP,Sp Lisbon
+RUS,FK Rostov,Rostov
+RUS,FK Dinamo Moskva,Dynamo Moskva
+RUS,FK Krasnodar,FC Krasnodar
+RUS,FK Spartak Moskva,Spartak Moskva
+RUS,PFK CSKA Moskva,CSKA Moskva
+RUS,PFK Krylya Sovetov Samara,Kryliya Sovetov
+RUS,FC Khimki (-2025),FC Khimki
+RUS,RFK Akhmat Grozny,Terek Grozny
+RUS,FK Nizhny Novgorod,Nizhny Novgorod
+RUS,Футбольный клуб "Локомотив" Москва,Lok Moskva
+RUS,AO FK Zenit Sankt-Peterburg,Zenit
+SCO,Heart of Midlothian FC,Hearts
+TUR,Beşiktaş Jimnastik Kulübü,Besiktas
+TUR,Caykur Rizespor,Rizespor
+TUR,Göztepe,Goztep
+TUR,Gaziantep FK,Gaziantepspor
+TUR,Adana Demirspor,Ad. Demirspor
+TUR,Bodrum FK,Bodrumspor
+TUR,Basaksehir FK,Buyuksehyr

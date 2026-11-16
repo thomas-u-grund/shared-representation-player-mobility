@@ -1,0 +1,6 @@
+data_pseudonymised/
+reproduced*/
+__pycache__/
+.DS_Store
+raw/kaggle/data_*
+coach_retry/*.gz

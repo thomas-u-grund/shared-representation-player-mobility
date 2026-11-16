@@ -1,0 +1,363 @@
+{
+  "Club baseline": {
+    "events": 2000,
+    "alternatives": 29795,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5364.0284163639935,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507132069139119,
+    "predicted_exposed_given_eligible": 0.4382566600359783,
+    "equalised_exposed_given_eligible": 0.376690256746606,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31958382278905856,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club adjusted": {
+    "events": 2000,
+    "alternatives": 29795,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5337.779407027649,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507132069139119,
+    "predicted_exposed_given_eligible": 0.4382566381608285,
+    "equalised_exposed_given_eligible": 0.3814945861059656,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31958382278905856,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club fixed effects": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5160.267063839244,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.43825682986314496,
+    "equalised_exposed_given_eligible": 0.38019205758869545,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club by summer fixed effects": {
+    "events": 2000,
+    "alternatives": 28219,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 4982.121534089507,
+    "exposed_events": 1224,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22474219497501682,
+    "predicted_exposed_given_eligible": 0.4436273489716173,
+    "equalised_exposed_given_eligible": 0.3884363255494664,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.32098940430206596,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club past flows": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5051.623508933591,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.4382563735220731,
+    "equalised_exposed_given_eligible": 0.3885358267948331,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club by summer past flows": {
+    "events": 2000,
+    "alternatives": 28219,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 4863.635955582677,
+    "exposed_events": 1224,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22474219497501682,
+    "predicted_exposed_given_eligible": 0.4436271982261725,
+    "equalised_exposed_given_eligible": 0.39560782213868156,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.32098940430206596,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club short past flows": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5118.546178871097,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.43825669561543495,
+    "equalised_exposed_given_eligible": 0.38271281348919817,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club long past flows": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5054.888451522416,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.438256579621193,
+    "equalised_exposed_given_eligible": 0.38883589271050367,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club past flows excluding turn of July": {
+    "events": 1539,
+    "alternatives": 22696,
+    "players": 1357,
+    "labels": 521,
+    "neg_loglik": 3878.0588468395817,
+    "exposed_events": 913,
+    "chosen_exposed": 391,
+    "candidate_share": 0.21589707437433908,
+    "predicted_exposed_given_eligible": 0.4282588836780505,
+    "equalised_exposed_given_eligible": 0.3858237387443355,
+    "routes": {
+      "between": 917,
+      "within": 622
+    },
+    "prior_flow_chosen": 605,
+    "prior_flow_alternative_share": 0.30895311949242155,
+    "events_on_30_june_or_1_july": 0
+  },
+  "Club timing interaction": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5050.639979024265,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.43825697143444153,
+    "equalised_exposed_given_eligible": 0.3885102093444896,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club past flows interaction": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5050.042708984977,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.4382566772763404,
+    "equalised_exposed_given_eligible": 0.3883604756443586,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club including unobserved rosters": {
+    "events": 2412,
+    "alternatives": 41891,
+    "players": 2018,
+    "labels": 655,
+    "neg_loglik": 6610.886491777538,
+    "exposed_events": 1528,
+    "chosen_exposed": 543,
+    "candidate_share": 0.19784679286720297,
+    "predicted_exposed_given_eligible": 0.3553666101640941,
+    "equalised_exposed_given_eligible": 0.30432971647541784,
+    "routes": {
+      "between": 1244,
+      "within": 1168
+    },
+    "prior_flow_chosen": 955,
+    "prior_flow_alternative_share": 0.3182306462008546,
+    "events_on_30_june_or_1_july": 541
+  },
+  "Club broad sample": {
+    "events": 2928,
+    "alternatives": 43934,
+    "players": 2070,
+    "labels": 698,
+    "neg_loglik": 7521.429226850779,
+    "exposed_events": 1845,
+    "chosen_exposed": 859,
+    "candidate_share": 0.22968543724677926,
+    "predicted_exposed_given_eligible": 0.46558287602994014,
+    "equalised_exposed_given_eligible": 0.3831611386139507,
+    "routes": {
+      "between": 1612,
+      "within": 1316
+    },
+    "prior_flow_chosen": 1203,
+    "prior_flow_alternative_share": 0.318341148085765,
+    "events_on_30_june_or_1_july": 1389
+  },
+  "Club excluding turn of July": {
+    "events": 1539,
+    "alternatives": 22696,
+    "players": 1357,
+    "labels": 521,
+    "neg_loglik": 3927.6700053645263,
+    "exposed_events": 913,
+    "chosen_exposed": 391,
+    "candidate_share": 0.21589707437433908,
+    "predicted_exposed_given_eligible": 0.42825838262663796,
+    "equalised_exposed_given_eligible": 0.3801011810141474,
+    "routes": {
+      "between": 917,
+      "within": 622
+    },
+    "prior_flow_chosen": 605,
+    "prior_flow_alternative_share": 0.30895311949242155,
+    "events_on_30_june_or_1_july": 0
+  },
+  "Club player quality by Elo": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 4862.398693762416,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.4382566404456481,
+    "equalised_exposed_given_eligible": 0.3872979097730423,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club dose": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5156.456762802551,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club route interaction": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5160.249653172909,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.43825677431504956,
+    "equalised_exposed_given_eligible": 0.38020527893086525,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "Club year interaction": {
+    "events": 2000,
+    "alternatives": 29586,
+    "players": 1725,
+    "labels": 594,
+    "neg_loglik": 5159.049921132893,
+    "exposed_events": 1239,
+    "chosen_exposed": 543,
+    "candidate_share": 0.22507266950584737,
+    "predicted_exposed_given_eligible": 0.43825659426762,
+    "equalised_exposed_given_eligible": 0.38010952370196366,
+    "routes": {
+      "between": 1089,
+      "within": 911
+    },
+    "prior_flow_chosen": 816,
+    "prior_flow_alternative_share": 0.31984722503886975,
+    "events_on_30_june_or_1_july": 461
+  },
+  "League fixed routes": {
+    "events": 2412,
+    "alternatives": 29851,
+    "players": 2018,
+    "labels": 655,
+    "neg_loglik": 3932.5777602808575,
+    "routes": {
+      "between": 1244,
+      "within": 1168
+    }
+  },
+  "League fixed cross routes": {
+    "events": 1244,
+    "alternatives": 14418,
+    "players": 1065,
+    "labels": 434,
+    "neg_loglik": 2574.7197513825904,
+    "routes": {
+      "between": 1244
+    }
+  }
+}
