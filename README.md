@@ -13,7 +13,8 @@ January windows in between.
 | `revision/` | Scripts and result tables for the additional analyses: contract status and fee, twin-agency comparison, recency, choice sets, league specifications, sample variants (`README.md` explains each script) |
 | `coach_retry/`, `winter_recovery/`, `winter_proxy/` | Builders for the model-ready inputs, with their source lists and checksums |
 | `raw/kaggle/download_manifest.csv` | Version, archive timestamp, URL and SHA-256 of every historical `players.csv` used |
-| `reproduce_summer.py` | Re-estimates the summer models from `data_pseudonymised/` and checks them against the stored results |
+| `R/` | R implementation of the summer club and league models (`analyse.R`, `clogit_helpers.R`) and the check against the stored results (`reproduce_summer.R`) |
+| `reproduce_summer.py` | Python version of the same check |
 | `reproduce.py`, `rebuild_data.py` | Full pipeline from the third-party sources (see below) |
 | `make_pseudonymised_data.py` | How the pseudonymised inputs were produced |
 
@@ -21,17 +22,31 @@ The Online Appendix to the paper documents the twin-agency matching and lists ev
 
 ## Reproducing the summer results
 
+In R (4.x; packages `data.table`, `survival`, `readr`, `stringi`, `jsonlite`):
+
+```sh
+Rscript R/reproduce_summer.R
+```
+
+`R/analyse.R` re-estimates all 42 club and league models for the main sample (2,000 club events, 2,412 league events) on
+`data_pseudonymised/`, using `survival::clogit` with cluster-robust variances, and `R/reproduce_summer.R` compares them with the
+stored estimates. The R estimates agree with the stored ones to within 0.0005% in the odds ratios and match exactly in
+events and alternatives. The run takes a few minutes.
+
+The same models also exist in Python (the original implementation, a hand-written conditional logit):
+
 ```sh
 python3.12 -m venv .venv && source .venv/bin/activate
 python -m pip install -r requirements.txt
 python reproduce_summer.py
 ```
 
-This reruns all 42 club and league models for the main sample (2,000 club events, 2,412 league events) on
-`data_pseudonymised/` and checks them against `agency_paper/model_results.csv`. The pseudonymised inputs reproduce the stored
-estimates exactly. Player identifiers and representative labels are random codes, player names are removed, and the mapping
-was not kept. The summer–January comparison and the additional analyses in `revision/` also read the original representative
-labels, which the pseudonymised files do not carry, so they run only on the full rebuild.
+The two implementations agree, so the R version doubles as an independent check of the Python estimator.
+
+Player identifiers and representative labels in `data_pseudonymised/` are random codes, player names are removed, and the
+mapping was not kept. The summer–January comparison and the additional analyses in `revision/` also read the original
+representative labels or raw files, which the pseudonymised data do not carry, so they currently run only in Python on the
+full rebuild. They are being ported to R.
 
 ## Full rebuild from the sources
 
@@ -61,7 +76,7 @@ underlying data. Check the providers' terms before reusing any of these files.
 
 ## Environment
 
-Python 3.12 with `requirements.txt` is the reference environment. Results were also checked on Python 3.14 with newer pandas
+R 4.6 and Python 3.12 with `requirements.txt` are the reference environments. Results were also checked on Python 3.14 with newer pandas
 and scipy and agree within the tolerance in the reproduction scripts.
 
 ## Licence
