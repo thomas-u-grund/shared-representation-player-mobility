@@ -6,7 +6,7 @@ repo <- normalizePath(file.path(script_dir, "..")); data <- file.path(repo, "dat
 stopifnot(dir.exists(data))
 run <- function(script, ...) { cat("==", script, "\n"); st <- system2("Rscript", c(shQuote(file.path(script_dir, script)), ...), stdout = file.path(out, paste0(script, ".log")), stderr = file.path(out, paste0(script, ".log"))); stopifnot(st == 0) }
 run("analyse.R", shQuote(data), shQuote(out))
-for (s in c("rev1_timing.R", "rev2_twin.R", "rev4_choiceset.R", "rev5_league.R", "rev6_contract.R", "rev7_baseline.R", "rev8b_fill_models.R")) run(s, shQuote(data), shQuote(out))
+for (s in c("rev1_timing.R", "rev2_twin.R", "rev4_choiceset.R", "rev5_league.R", "rev6_contract.R", "rev7_baseline.R", "rev8b_fill_models.R", "rev9_specialisation.R")) run(s, shQuote(data), shQuote(out))
 run("compare_windows.R", shQuote(data), shQuote(out))
 run("make_tables.R", shQuote(out))
 if (file.exists(file.path(repo, "agency_paper", "manuscript.md"))) run("render_manuscript.R", shQuote(file.path(repo, "agency_paper")), shQuote(out), shQuote(data), shQuote(file.path(repo, "raw", "kaggle", "download_manifest.csv")), shQuote(out))
@@ -14,7 +14,7 @@ suppressPackageStartupMessages(library(data.table))
 chk <- function(new, old, keys = c("model", "term")) { n <- fread(file.path(out, new)); o <- fread(file.path(repo, old)); m <- merge(o, n, by = keys, suffixes = c("_old", "_new"))
   d <- max(abs(m$odds_ratio_old - m$odds_ratio_new) / m$odds_ratio_old); cat(sprintf("%-34s %3d/%3d rows, max relative difference in odds ratios %.1e\n", new, nrow(m), nrow(o), d)); stopifnot(nrow(m) == nrow(o), d < 0.002) }
 chk("model_results_R.csv", "agency_paper/model_results.csv")
-for (f in c("rev1_timing_results", "rev2_identification_results", "rev2b_twin_by_contract_results", "rev2c_closest_twin_results", "rev4_choiceset_results", "rev4b_elo_results", "rev5_league_results", "rev6_misc_results", "rev8_fill_results"))
+for (f in c("rev1_timing_results", "rev2_identification_results", "rev2b_twin_by_contract_results", "rev2c_closest_twin_results", "rev4_choiceset_results", "rev4b_elo_results", "rev5_league_results", "rev6_misc_results", "rev8_fill_results", "rev9_specialisation_results"))
   chk(paste0(f, "_R.csv"), file.path("revision", paste0(f, ".csv")))
 chk("season_comparison_results_R.csv", "agency_paper/season_comparison_results.csv", c("model", "term", "cluster"))
 chk("revision_results_R.csv", "agency_paper/revision_results.csv", c("block", "label"))
