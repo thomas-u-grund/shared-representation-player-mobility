@@ -64,7 +64,7 @@ draw <- function(items, file, w, h, xlim, colours, xlab = "Odds ratio or ratio o
   items[, y := rev(seq_len(.N))]
   p <- ggplot(items, aes(y = y, colour = kind)) + geom_vline(xintercept = 1, linetype = "dashed", colour = "grey40", linewidth = .3) +
     geom_linerange(aes(xmin = lo, xmax = hi), linewidth = .7) + geom_point(aes(x = odds_ratio, shape = kind), size = 2) +
-    scale_y_continuous(breaks = items$y, labels = items$label) + scale_colour_manual(values = colours) + scale_shape_manual(values = c(a = 16, b = 16, c = 18, main = 16, sens = 16)) +
+    scale_y_continuous(breaks = items$y, labels = items$label) + scale_colour_manual(values = colours) + scale_shape_manual(values = c(a = 16, b = 17, c = 18, main = 16, sens = 16)) +
     coord_cartesian(xlim = xlim) + labs(x = xlab, y = NULL) + theme_fig + theme(legend.position = "none", axis.line.x = element_line(colour = "black", linewidth = .3), axis.ticks.x = element_line(colour = "black", linewidth = .3))
   ggsave(file.path(dir, file), p, width = w, height = h, dpi = 200)
 }
@@ -81,5 +81,5 @@ its <- list(c("Preferred club model, 2,000 moves", "a", pref), c("Own agency, jo
             c("Three matched agencies, same model", "b", g("Twin agencies with similar portfolios (placebo)")), c("Ratio: own to three matched agencies", "c", g("Difference: own minus twin agencies")),
             c("Closest matched agency, separate model", "b", g("Closest single twin (placebo)")), c("Ratio: own to closest matched agency", "c", g("Difference: own minus closest single twin")))
 it2 <- rbindlist(lapply(its, function(s) data.table(label = s[1], kind = s[2], odds_ratio = as.numeric(s[3]), lo = as.numeric(s[4]), hi = as.numeric(s[5]))))
-draw(it2, "figure1_main_R.png", 7.2, 3.4, c(0.75, 2.0), c(a = "#1f4e79", b = "#b5651d", c = "#444444"))
+draw(it2, "figure1_main_R.png", 7.2, 3.4, c(0.75, 2.0), c(a = "#1f4e79", b = "#b5651d", c = "#000000"))
 cat("wrote revision_results_R.csv and two figures to", dir, "\n")
