@@ -63,7 +63,7 @@ build <- function(text, name, title, widthf) {
   style_docx(docx, title, widthf); docx
 }
 main_w <- function(i, n) if (i == 0) c(.6, 1.06, 1.15, 1.25, 1.17, 1.27) else c(3.58, .72, .85, 1.35)
-d1 <- build(fill(paste(readLines(file.path(paper, "manuscript.md"), warn = FALSE, encoding = "UTF-8"), collapse = "\n"), tables), "Shared_Representation_and_Player_Mobility", "Shared Representation and Player Mobility in European Football", main_w)
+d1 <- build(fill(paste(readLines(file.path(paper, "manuscript.md"), warn = FALSE, encoding = "UTF-8"), collapse = "\n"), tables), "Shared_Representation_and_Player_Mobility", "Who Joins Which Club? Shared Representation in European Football", main_w)
 
 # ---- online appendix
 q <- R("rev2_matching_quality_R.csv"); cv <- R("rev2_matching_coverage_R.csv"); ex <- R("rev2_worked_example_R.csv")

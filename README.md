@@ -1,4 +1,4 @@
-# Replication materials: Shared Representation and Player Mobility in European Football
+# Replication materials: Who Joins Which Club? Shared Representation in European Football
 
 Code, result tables and file manifests for the paper of the same name (submitted to the *International Review for the
 Sociology of Sport*). The paper asks whether a player's destination club is predicted by an existing client of the player's
