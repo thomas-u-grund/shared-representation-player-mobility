@@ -22,7 +22,7 @@ With the paper sources, `Rscript run_all.R <output_dir> <paper_dir>` also builds
 | `run_all.R` | The one command above |
 | `code/study1/`, `code/study2/` | Analysis scripts: `01`–`13` for Study 1 (file names say what they do; outputs are listed in `results/README.md`), two scripts for Study 2 |
 | `code/lib/`, `code/report/` | Shared helpers; table, figure and document builders |
-| `data/study1/` | Model-ready Study 1 inputs with random player and representative codes (not under version control, see below) |
+| `data/study1/` | Model-ready Study 1 inputs with random player and representative codes (included; see below) |
 | `data/study2/` | Study 2 inputs: the harmonised FA transaction table and the division of each club |
 | `results/` | The stored results the paper reports, and `results/README.md` |
 | `rebuild_from_raw/` | Optional: rebuilds the inputs from the raw downloads and the FA PDFs (`rebuild_from_raw/README.md`) |
@@ -37,8 +37,8 @@ With the paper sources, `Rscript run_all.R <output_dir> <paper_dir>` also builds
   `results/download_manifest.csv` and `rebuild_from_raw/README.md`. The Cariboo compilation carries a CC0 licence, but its content derives from
   Transfermarkt, whose terms of use apply. Check the providers’ terms before reusing any of these files.
 - `data/study1/` has player and representative codes replaced by random codes, player names removed and the mapping not kept (two outputs depend on
-  the sort order of the codes only: which agency the anonymised worked example shows, never an estimate). It is kept out of version control until the
-  providers’ terms are confirmed; reviewers can be given it on request.
+  the sort order of the codes only: which agency the anonymised worked example shows, never an estimate). It is included in this repository, so `run_all.R`
+  runs end to end.
 
 **Terminology.** The paper calls the comparison agencies *matched agencies*; in code and result files they are *twins* (`twin_any`, `twin1`).
 The labels `R1`, `R2`, … and `V …` in model names only identify blocks of analyses.
