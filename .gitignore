@@ -1,8 +1,8 @@
-data_pseudonymised/
+data/study1/
 results_reproduced/
 reproduced*/
 .DS_Store
-data_sources/raw/kaggle/data_*
-data_sources/coach_retry/*.gz
-study2_fa_reports/raw/
-study2_fa_reports/pages/
+rebuild_from_raw/sources/raw/
+rebuild_from_raw/sources/coach_retry/*.gz
+rebuild_from_raw/study2/raw/
+rebuild_from_raw/study2/pages/
