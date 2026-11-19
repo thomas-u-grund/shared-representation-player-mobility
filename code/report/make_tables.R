@@ -1,4 +1,4 @@
-# Collect the estimates reported in the paper's tables into table_estimates.csv and draw Figure 1 and Figure A1 (specification ladder).
+# Collect the estimates reported in the paper's tables into table_estimates.csv and draw Figure B1 (specification ladder).
 # Usage: Rscript code/report/make_tables.R <results_dir>   (the directory holding the result tables written by code/study1/ and code/study2/; the outputs go there too)
 suppressPackageStartupMessages({library(data.table); library(ggplot2)})
 dir <- commandArgs(TRUE)[1]
@@ -73,12 +73,5 @@ spec <- list(c("Roster coverage only", "Club baseline"), c("+ nationality and fi
              c("+ three-year flows (preferred)", "Club past flows"), c("Club-by-summer FE + flows", "Club by summer past flows"), c("Omit 30 June / 1 July + flows", "Club past flows excluding turn of July"))
 it <- rbindlist(lapply(spec, function(s) { v <- pick(s[2]); data.table(label = s[1], odds_ratio = v[1], lo = v[2], hi = v[3], kind = "main") }))
 sens <- R[block == "sensitivity" & !startsWith(label, "Main sample, omit"), .(label, odds_ratio, lo, hi, kind = "sens")]
-draw(rbind(it, sens), "figureA1_specifications.png", 7.2, 6.2, c(0.85, 2.3), c(main = "#1f4e79", sens = "#b5651d"), xlab = "Odds ratio (95% CI)")
-g <- function(lbl) { r <- R[label == lbl]; c(r$odds_ratio, r$lo, r$hi) }
-pref <- pick("Club past flows")
-its <- list(c("Preferred club model, 2,000 moves", "a", pref), c("Own agency, joint model (1,674 moves)", "a", g("Own agency (twin-agency sample)")),
-            c("Three matched agencies, same model", "b", g("Twin agencies with similar portfolios (placebo)")), c("Ratio: own to three matched agencies", "c", g("Difference: own minus twin agencies")),
-            c("Closest matched agency, separate model", "b", g("Closest single twin (placebo)")), c("Ratio: own to closest matched agency", "c", g("Difference: own minus closest single twin")))
-it2 <- rbindlist(lapply(its, function(s) data.table(label = s[1], kind = s[2], odds_ratio = as.numeric(s[3]), lo = as.numeric(s[4]), hi = as.numeric(s[5]))))
-draw(it2, "figure1_main.png", 7.2, 3.4, c(0.75, 2.0), c(a = "#1f4e79", b = "#b5651d", c = "#000000"))
-cat("wrote table_estimates.csv and two figures to", dir, "\n")
+draw(rbind(it, sens), "figureB1_specifications.png", 7.2, 6.2, c(0.85, 2.3), c(main = "#1f4e79", sens = "#b5651d"), xlab = "Odds ratio (95% CI)")
+cat("wrote table_estimates.csv and the figure to", dir, "\n")

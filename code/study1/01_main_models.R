@@ -1,4 +1,4 @@
-# Club and league conditional logits for the main sample (Tables 2 and 4, Figure A1) and their specification variants.
+# Club and league conditional logits for the main sample (Tables 2 and 4, Figure B1) and their specification variants.
 # Usage: Rscript code/study1/01_main_models.R <data_root> [output_dir]
 # Writes model_results.csv and sample_summary.json.
 source(file.path(dirname(gsub("~+~", " ", sub("--file=", "", grep("--file=", commandArgs(FALSE), value = TRUE)[1]), fixed = TRUE)), "..", "lib", "setup.R"))

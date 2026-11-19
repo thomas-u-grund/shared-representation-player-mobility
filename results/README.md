@@ -21,7 +21,7 @@ label (`label_lo`, `label_hi`) and by player (`player_id_lo`, `player_id_hi`).
 | `agency_concentration.csv`, `agency_concentration_results.csv`, `league_heterogeneity.csv`, `league_results_by_league.csv` | `13_agency_concentration_leagues.R` (Online Appendix B11, B12) |
 | `fa_choice_results.csv` | `code/study2/fa_choice_model.R` (Study 2: Table 4 and B13; odds ratios with 95% CI clustered by intermediary, columns `lo`, `hi`) |
 | `fa_audit_results.csv`, `fa_audit_counts.csv` | `code/study2/fa_audit_model.R` (Study 2: renewal model, one observation per signing, club-by-period effects, link audit) |
-| `table_estimates.csv`, `figures/` | `code/report/make_tables.R` (rows of the paper’s tables; Figure 1 and Figure A1) |
+| `table_estimates.csv`, `figures/` | `code/report/make_tables.R` (rows of the paper’s tables; Figure B1) |
 | `fa_choice_informative_events.csv` | `code/study2/fa_choice_model.R` (events and alternatives per Study 2 run) |
 | `download_manifest.csv`, `winter_models.csv` | Provenance and the January backcast models, read by the table builder (Online Appendix A1, B10); see `rebuild_from_raw/README.md` |
 
