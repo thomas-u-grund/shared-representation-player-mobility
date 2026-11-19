@@ -65,7 +65,7 @@ draw <- function(items, file, w, h, xlim, colours, xlab = "Odds ratio or ratio o
     geom_linerange(aes(xmin = lo, xmax = hi), linewidth = .7) + geom_point(aes(x = odds_ratio, shape = kind), size = 2) +
     scale_y_continuous(breaks = items$y, labels = items$label) + scale_colour_manual(values = colours) + scale_shape_manual(values = c(a = 16, b = 17, c = 18, main = 16, sens = 16)) +
     coord_cartesian(xlim = xlim) + labs(x = xlab, y = NULL) + theme_fig + theme(legend.position = "none", axis.line.x = element_line(colour = "black", linewidth = .3), axis.ticks.x = element_line(colour = "black", linewidth = .3))
-  ggsave(file.path(dir, file), p, width = w, height = h, dpi = 200)
+  ggsave(file.path(dir, file), p, width = w, height = h, dpi = 300)
 }
 b <- fread(file.path(dir, "model_results.csv"))[term == "same"]
 pick <- function(m) { r <- b[model == m]; c(r$odds_ratio, r$label_lo, r$label_hi) }
