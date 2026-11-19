@@ -1,85 +1,98 @@
-# Replication materials: Who Joins Which Club? Shared Representation in European Football
+# Replication package: Who Joins Which Club? Football Agents and Player Recruitment in European Men’s Football
 
-Code, result tables and file manifests for the paper of the same name (submitted to the *International Review for the
-Sociology of Sport*). The paper asks whether a player's destination club is predicted by an existing client of the player's
-representative at that club, using pre-window rosters for 14 European men's top flights, summers 2023–2025 and the
-January windows in between.
+Code, result tables and file manifests for the paper of the same name (submitted to the *International Review for the Sociology of
+Sport*). The paper asks whether a player’s destination club is predicted by an existing client of the player’s representative at that
+club. It uses pre-window rosters of 14 European men’s top flights for the summers of 2023–2025 and the January windows in between.
 
-**Terminology.** The paper calls the comparison agencies "matched agencies". In the code and result files they are called "twins" (for example `rev2_twin.R` and the model names `twin agencies (placebo)`); the two terms refer to the same thing, and the paper does not treat the comparison as a placebo.
+Everything is written in R. One command re-estimates every model in the paper from the pseudonymised data and compares the results with
+the stored tables.
 
-## What is in this repository
+## Quick start
+
+```sh
+Rscript run_all.R                  # about 25 minutes; writes results_reproduced/
+```
+
+Requirements: R 4.x (reference environment: R 4.6.0) with the packages `data.table`, `survival`, `readr`, `stringi`, `jsonlite`,
+`ggplot2`, `xml2` and `zip`. The Word and PDF files additionally need `pandoc` and LibreOffice, and the paper sources
+(`manuscript.md`, `online_appendix.md`), which are not part of this repository: `Rscript run_all.R <output_dir> <paper_dir>`.
+Without them `run_all.R` writes `paper_tables.md` with every table of the paper and the appendix. Package versions used for the
+stored results are recorded in `results_reproduced/session_info.txt` after a run.
+
+`run_all.R` ends by comparing each re-estimate with `stored_results/`. Events and alternatives are identical; odds ratios agree to
+within 1e-5 (relative), and the script stops if any differs by more than 0.2%.
+
+## Layout
 
 | Path | Contents |
 |---|---|
-| `agency_paper/` | The stored results (`model_results*.csv`, `season_comparison_results*.csv`, `sample_summary*.json`, `revision_results.csv`) and the figures |
-| `revision/` | Scripts and result tables for the additional analyses: contract status and fee, twin-agency comparison, recency, choice sets, league specifications, sample variants (`README.md` explains each script) |
-| `coach_retry/`, `winter_recovery/`, `winter_proxy/` | Builders for the model-ready inputs, with their source lists and checksums |
-| `raw/kaggle/download_manifest.csv` | Version, archive timestamp, URL and SHA-256 of every historical `players.csv` used |
-| `R/` | The R pipeline: estimation (`analyse.R`, `rev*.R`, `compare_windows.R`, `clogit_helpers.R`), tables and figures (`make_tables.R`), rendering (`render_manuscript.R`), builders (`build/`, `rebuild_data.R`), the pseudonymiser (`make_pseudonymised_data.R`) and the driver `run_all.R` |
+| `run_all.R` | Runs everything in order and checks the results against `stored_results/` |
+| `R/analysis/` | One script per block of analyses (table below) |
+| `R/report/` | `make_tables.R` (table rows and the two figures) and `render_manuscript.R` (all tables as markdown; Word and PDF if the paper sources are present) |
+| `R/lib/` | Shared code: `setup.R`, `prepare.R` (event and candidate-club frames, prior flows), `enrich.R` (fees, returns, contract status), `models.R` (conditional logit with clustered errors), `docx_style.R` |
+| `R/data_build/` | Rebuilds every model input from the archived raw files (`rebuild_data.R` and numbered builders) and creates the pseudonymised data |
+| `data_pseudonymised/` | Model-ready inputs with random player and representative codes (not under version control, see below) |
+| `data_sources/` | Source lists, checksums and the manifest of archived Transfermarkt releases; see `data_sources/README.md` |
+| `stored_results/` | The result tables and figures the paper reports (see `stored_results/README.md`) |
+| `CHECKSUMS.sha256` | SHA-256 of every file in the repository |
 
-The Online Appendix to the paper documents the twin-agency matching and lists every data file and version used.
+## Analyses
 
-## Reproducing the results
+| Script | Content | Main outputs |
+|---|---|---|
+| `01_main_models.R` | Club and league conditional logits, specification variants (Tables 2 and 4, Figure A1) | `model_results.csv`, `sample_summary.json` |
+| `02_timing_fees_contract.R` | Fee type, returns to a former club, 30 June and 1 July, contract status (Table 5) | `timing_fees_results.csv`, `contract_status_results.csv` |
+| `03_matched_agencies.R` | Own representative versus matched agencies, recent versus long-standing co-clients, matching diagnostics (Table 3, Online Appendix A) | `matched_agencies_*.csv` |
+| `04_choice_sets_specialisation.R` | Tier and affordability controls, restricted alternatives, Elo decomposition, client-tier control (Table 6) | `choice_set_results.csv`, `elo_decomposition_results.csv`, `specialisation_results.csv` |
+| `05_league.R` | League model with nationality-by-league effects and agency concentration (Tables 4 and 6) | `league_results.csv` |
+| `06_sample_variants.R` | First-version, player-level, carry-forward and look-ahead samples; harmonised labels; observed versus uniform share of connected destinations | `sample_variants_results.csv`, `baseline_share.csv` |
+| `07_season_comparison.R` | Summer versus January destination sorting (Online Appendix) | `season_comparison_results.csv` |
+| `08_move_type.R` | Loan-like moves: no fee and a return to the origin club within 14 months (Online Appendix B9) | `move_type_results.csv` |
+| `09_matched_agencies_value.R` | Matched agencies when the profile includes market value, and with the mover left out (Table 3, Online Appendix B8) | `matched_agencies_value_results.csv` |
+| `10_label_audit.R` | Baseline-only labels, summers separately, label coverage (Online Appendix B9) | `label_audit_results.csv` |
+| `11_club_resources.R` | Association by club squad value within league and summer (Online Appendix B9) | `club_resources_results.csv` |
 
-The pipeline is implemented in R (4.x; packages `data.table`, `survival`, `readr`, `stringi`, `jsonlite`, `ggplot2`, `xml2`, `zip`;
-`pandoc` and LibreOffice for the Word and PDF files).
+Each script is run as `Rscript R/analysis/<script> <data_root> [output_dir]` and can be used on its own.
 
-**From the pseudonymised data** (`data_pseudonymised/`, about 37 MB):
+**Terminology.** The paper calls the comparison agencies *matched agencies*. In the code and result files they are *twins*
+(`twin_any`, `twin1`, model names such as `twin agencies (placebo)`). The labels `R1`, `R2`, `R4`, … and `V …` in model names only
+identify blocks of analyses and have no other meaning.
 
-```sh
-Rscript R/run_all.R            # about 15 minutes
-```
+## Data
 
-This re-estimates every model in the paper (club and league models, timing and fee, contract status, own-versus-matched agencies,
-recency, choice sets and the Elo decomposition, league specifications, sample variants, the summer–January comparison), rebuilds the
-tables and figures, renders the manuscript and online appendix (only if `agency_paper/manuscript.md` is present; the paper sources are not part of this repository), and compares each estimate with the stored one
-(`agency_paper/*.csv`, `revision/*.csv`, the results the manuscript reports). The re-estimates reproduce the stored ones to within 1e-5 relative in odds ratios, with identical events and alternatives. The twin-agency analyses depend on the random order of the pseudonymised codes where candidate agencies tie, so data re-pseudonymised with `R/make_pseudonymised_data.R` can differ from the stored estimates in the third decimal (the check tolerates 0.2%). The first-version `*_archived` files are stored estimates that no script here regenerates.
-`R/analyse.R` alone (42 summer models) takes a few minutes; `R/reproduce_summer.R` runs it and compares.
+Player identifiers and representative labels in `data_pseudonymised/` are random codes, player names are removed, and the mapping was
+not kept. Two outputs depend on the sort order of the labels only (the anonymised worked example in the appendix picks its focal
+agency among equals), so they can differ in which agency is shown but not in any estimate.
 
-**From the third-party sources:**
+`data_pseudonymised/` is generated by `R/data_build/make_pseudonymised_data.R` from intermediate files that are not distributed. It is
+kept out of version control until the data providers’ terms have been confirmed. Reviewers can be given it on request.
 
-```sh
-Rscript R/rebuild_data.R <root> <output_dir>
-```
-
-rebuilds every model input (event panel, performance and candidate tables, winter rosters, transfers and backcast, extended
-sample) from the archived raw files described in `raw/kaggle/download_manifest.csv`. Compared with the shipped tables, the
-outputs are byte-identical apart from float formatting in the last digit and the two fitted-model files, which differ by
-1e-8 or less (optimiser tolerance). The builders are in `R/build/`.
-
-Player identifiers and representative labels in `data_pseudonymised/` are random codes, player names are removed, and the
-mapping was not kept. Two analysis outputs depend on the labels' sort order only (the anonymised worked example in the appendix
-picks its focal agency among equals), so they can differ in which agency is shown but not in any estimate.
-
-
-## Data sources
-
-The analysis uses the following. They are not redistributed here.
+The analysis uses the following sources. They are not redistributed here.
 
 - Historical versions of `players.csv` from *Football Data from Transfermarkt* (Cariboo, Kaggle), compiled from Transfermarkt.
-  The manifest records the version, the archive file's Last-Modified timestamp and the checksum. The timestamp dates the
-  archived file, not individual profile updates or representation agreements.
+  `data_sources/raw/kaggle/download_manifest.csv` records the version, the archive file’s Last-Modified timestamp, the URL and the
+  checksum. The timestamp dates the archived file, not individual profile updates or representation agreements.
 - The transfer, games and appearances tables of the `transfermarkt-datasets` repository (Cariboo, GitHub).
 - Club Elo ratings through the `Club-Football-Match-Data` compilation (xgabora, GitHub), from ClubElo.
 - EA Sports player ratings for FIFA 23 and FC 24 from public GitHub extracts, and the sofifa data set on Kaggle.
 
-The dcaribou compilation carries a CC0 licence, but its content derives from Transfermarkt, whose terms of use apply to the
-underlying data. Check the providers' terms before reusing any of these files.
+The Cariboo compilation carries a CC0 licence, but its content derives from Transfermarkt, whose terms of use apply to the underlying
+data. Check the providers’ terms before reusing any of these files.
 
-## Status of the pseudonymised data
+## Rebuilding the inputs from the raw files
 
-`data_pseudonymised/` (about 9 MB) is generated by `R/make_pseudonymised_data.R` and is kept out of version control for now
-(`.gitignore`) until the data-provider terms have been confirmed. Reviewers can be given it on request.
+```sh
+Rscript R/data_build/rebuild_data.R <root> [output_dir]
+```
 
-## Environment
+rebuilds every model input (event panel, performance and candidate tables, winter rosters, transfers and backcast, extended sample)
+from the archived raw files, with `<root>` laid out like `data_sources/` plus the downloaded raw files (`data_sources/README.md`).
+Compared with the shipped tables, the values are identical. The files differ only in number formatting (15 rather than 17 significant digits,
+integers without a trailing `.0`, quoting of empty text fields), and the two fitted-model files differ by 1e-8 or less (optimiser tolerance).
+A run takes under a minute.
 
-R 4.6 (packages above) is the reference environment.
-and scipy and agree within the tolerance in the reproduction scripts.
-
-## Licence
+## Licence and citation
 
 The code and result tables are released under the MIT licence (`LICENSE`). Third-party data are not covered.
-
-## Citation
 
 [Add the full citation and DOI of the paper and of the archived release after acceptance.]
