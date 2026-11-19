@@ -4,3 +4,5 @@ reproduced*/
 .DS_Store
 data_sources/raw/kaggle/data_*
 data_sources/coach_retry/*.gz
+study2_fa_reports/raw/
+study2_fa_reports/pages/

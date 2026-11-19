@@ -1,0 +1,109 @@
+run,exposure,period,events,informative_events,events_where_chosen_club_exposed
+"1 primary: ID match, 2019-20 to 2022-23, same division",any_prior,2019-20,348,144,35
+"1 primary: ID match, 2019-20 to 2022-23, same division",any_prior,2020-21,296,197,74
+"1 primary: ID match, 2019-20 to 2022-23, same division",any_prior,2021-22,348,249,99
+"1 primary: ID match, 2019-20 to 2022-23, same division",any_prior,2022-23,459,299,113
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_side,2019-20,348,135,29
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_side,2020-21,296,192,66
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_side,2021-22,348,232,86
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_side,2022-23,459,283,102
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_only,2019-20,348,45,6
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_only,2020-21,296,82,10
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_only,2021-22,348,104,24
+"1 primary: ID match, 2019-20 to 2022-23, same division",club_only,2022-23,459,138,19
+"1 primary: ID match, 2019-20 to 2022-23, same division",player_only,2019-20,348,36,6
+"1 primary: ID match, 2019-20 to 2022-23, same division",player_only,2020-21,296,75,8
+"1 primary: ID match, 2019-20 to 2022-23, same division",player_only,2021-22,348,136,13
+"1 primary: ID match, 2019-20 to 2022-23, same division",player_only,2022-23,459,155,11
+"2 primary, agent not also on the club side of the focal deal",any_prior,2019-20,31,7,5
+"2 primary, agent not also on the club side of the focal deal",any_prior,2020-21,22,10,2
+"2 primary, agent not also on the club side of the focal deal",any_prior,2021-22,77,55,22
+"2 primary, agent not also on the club side of the focal deal",any_prior,2022-23,103,58,16
+"2 primary, agent not also on the club side of the focal deal",club_side,2019-20,31,6,3
+"2 primary, agent not also on the club side of the focal deal",club_side,2020-21,22,10,2
+"2 primary, agent not also on the club side of the focal deal",club_side,2021-22,77,50,15
+"2 primary, agent not also on the club side of the focal deal",club_side,2022-23,103,54,13
+"2 primary, agent not also on the club side of the focal deal",club_only,2019-20,31,4,3
+"2 primary, agent not also on the club side of the focal deal",club_only,2020-21,22,5,0
+"2 primary, agent not also on the club side of the focal deal",club_only,2021-22,77,23,0
+"2 primary, agent not also on the club side of the focal deal",club_only,2022-23,103,21,3
+"2 primary, agent not also on the club side of the focal deal",player_only,2019-20,31,2,2
+"2 primary, agent not also on the club side of the focal deal",player_only,2020-21,22,3,0
+"2 primary, agent not also on the club side of the focal deal",player_only,2021-22,77,33,7
+"2 primary, agent not also on the club side of the focal deal",player_only,2022-23,103,34,3
+"3 name match, 2019-20 to 2022-23",any_prior,2019-20,348,144,35
+"3 name match, 2019-20 to 2022-23",any_prior,2020-21,296,196,75
+"3 name match, 2019-20 to 2022-23",any_prior,2021-22,348,244,89
+"3 name match, 2019-20 to 2022-23",any_prior,2022-23,459,296,112
+"3 name match, 2019-20 to 2022-23",club_side,2019-20,348,135,29
+"3 name match, 2019-20 to 2022-23",club_side,2020-21,296,191,66
+"3 name match, 2019-20 to 2022-23",club_side,2021-22,348,226,78
+"3 name match, 2019-20 to 2022-23",club_side,2022-23,459,280,101
+"3 name match, 2019-20 to 2022-23",club_only,2019-20,348,45,6
+"3 name match, 2019-20 to 2022-23",club_only,2020-21,296,82,10
+"3 name match, 2019-20 to 2022-23",club_only,2021-22,348,94,23
+"3 name match, 2019-20 to 2022-23",club_only,2022-23,459,131,15
+"3 name match, 2019-20 to 2022-23",player_only,2019-20,348,36,6
+"3 name match, 2019-20 to 2022-23",player_only,2020-21,296,75,9
+"3 name match, 2019-20 to 2022-23",player_only,2021-22,348,129,11
+"3 name match, 2019-20 to 2022-23",player_only,2022-23,459,153,11
+"4 name match, 2019-20 to 2025-26",any_prior,2019-20,348,144,35
+"4 name match, 2019-20 to 2025-26",any_prior,2020-21,296,196,75
+"4 name match, 2019-20 to 2025-26",any_prior,2021-22,348,244,89
+"4 name match, 2019-20 to 2025-26",any_prior,2022-23,459,296,112
+"4 name match, 2019-20 to 2025-26",any_prior,2023-24,475,308,116
+"4 name match, 2019-20 to 2025-26",any_prior,2024-25,661,320,95
+"4 name match, 2019-20 to 2025-26",any_prior,2025-26,681,466,138
+"4 name match, 2019-20 to 2025-26",club_side,2019-20,348,135,29
+"4 name match, 2019-20 to 2025-26",club_side,2020-21,296,191,66
+"4 name match, 2019-20 to 2025-26",club_side,2021-22,348,226,78
+"4 name match, 2019-20 to 2025-26",club_side,2022-23,459,280,101
+"4 name match, 2019-20 to 2025-26",club_side,2023-24,475,297,99
+"4 name match, 2019-20 to 2025-26",club_side,2024-25,661,302,78
+"4 name match, 2019-20 to 2025-26",club_side,2025-26,681,410,113
+"4 name match, 2019-20 to 2025-26",club_only,2019-20,348,45,6
+"4 name match, 2019-20 to 2025-26",club_only,2020-21,296,82,10
+"4 name match, 2019-20 to 2025-26",club_only,2021-22,348,94,23
+"4 name match, 2019-20 to 2025-26",club_only,2022-23,459,131,15
+"4 name match, 2019-20 to 2025-26",club_only,2023-24,475,130,24
+"4 name match, 2019-20 to 2025-26",club_only,2024-25,661,119,18
+"4 name match, 2019-20 to 2025-26",club_only,2025-26,681,163,23
+"4 name match, 2019-20 to 2025-26",player_only,2019-20,348,36,6
+"4 name match, 2019-20 to 2025-26",player_only,2020-21,296,75,9
+"4 name match, 2019-20 to 2025-26",player_only,2021-22,348,129,11
+"4 name match, 2019-20 to 2025-26",player_only,2022-23,459,153,11
+"4 name match, 2019-20 to 2025-26",player_only,2023-24,475,189,17
+"4 name match, 2019-20 to 2025-26",player_only,2024-25,661,164,17
+"4 name match, 2019-20 to 2025-26",player_only,2025-26,681,289,25
+"5 primary, tier-group choice sets",any_prior,2019-20,348,153,35
+"5 primary, tier-group choice sets",any_prior,2020-21,296,200,74
+"5 primary, tier-group choice sets",any_prior,2021-22,348,252,99
+"5 primary, tier-group choice sets",any_prior,2022-23,459,314,113
+"5 primary, tier-group choice sets",club_side,2019-20,348,141,29
+"5 primary, tier-group choice sets",club_side,2020-21,296,194,66
+"5 primary, tier-group choice sets",club_side,2021-22,348,239,86
+"5 primary, tier-group choice sets",club_side,2022-23,459,301,102
+"5 primary, tier-group choice sets",club_only,2019-20,348,52,6
+"5 primary, tier-group choice sets",club_only,2020-21,296,87,10
+"5 primary, tier-group choice sets",club_only,2021-22,348,127,24
+"5 primary, tier-group choice sets",club_only,2022-23,459,171,19
+"5 primary, tier-group choice sets",player_only,2019-20,348,47,6
+"5 primary, tier-group choice sets",player_only,2020-21,296,91,8
+"5 primary, tier-group choice sets",player_only,2021-22,348,142,13
+"5 primary, tier-group choice sets",player_only,2022-23,459,180,11
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",any_prior,2019-20,348,118,31
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",any_prior,2020-21,296,153,49
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",any_prior,2021-22,348,184,55
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",any_prior,2022-23,459,227,63
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_side,2019-20,348,111,25
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_side,2020-21,296,148,44
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_side,2021-22,348,170,47
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_side,2022-23,459,212,55
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_only,2019-20,348,44,6
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_only,2020-21,296,51,8
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_only,2021-22,348,62,14
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",club_only,2022-23,459,84,11
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",player_only,2019-20,348,33,6
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",player_only,2020-21,296,49,5
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",player_only,2021-22,348,78,8
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",player_only,2022-23,459,107,8

@@ -73,7 +73,7 @@ spec <- list(c("Roster coverage only", "Club baseline"), c("+ nationality and fi
              c("+ three-year flows (preferred)", "Club past flows"), c("Club-by-summer FE + flows", "Club by summer past flows"), c("Omit 30 June / 1 July + flows", "Club past flows excluding turn of July"))
 it <- rbindlist(lapply(spec, function(s) { v <- pick(s[2]); data.table(label = s[1], odds_ratio = v[1], lo = v[2], hi = v[3], kind = "main") }))
 sens <- R[block == "sensitivity" & !startsWith(label, "Main sample, omit"), .(label, odds_ratio, lo, hi, kind = "sens")]
-draw(rbind(it, sens), "figureA1_specifications.png", 7.2, 6.2, c(0.85, 2.3), c(main = "#1f4e79", sens = "#b5651d"))
+draw(rbind(it, sens), "figureA1_specifications.png", 7.2, 6.2, c(0.85, 2.3), c(main = "#1f4e79", sens = "#b5651d"), xlab = "Odds ratio (95% CI)")
 g <- function(lbl) { r <- R[label == lbl]; c(r$odds_ratio, r$lo, r$hi) }
 pref <- pick("Club past flows")
 its <- list(c("Preferred club model, 2,000 moves", "a", pref), c("Own agency, joint model (1,674 moves)", "a", g("Own agency (twin-agency sample)")),

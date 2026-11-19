@@ -1,0 +1,100 @@
+2015-16|2018-19|Michael Drew|Volenti Sports Management|Volenti Limited|Chesterfield|Scunthorpe United|conflict=1|single=0|multi_firm=1
+2023-24|2025-26|Liam Odonnell|||Scunthorpe United|Rotherham United|conflict=0|single=0|multi_firm=0
+2023-24|2025-26|Viktor Kolar|||Manchester United|Bristol City|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|Alan Naigeon|||Manchester United|Chelsea|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Scott James Dutton|||Coventry City|Oldham Athletic|conflict=0|single=0|multi_firm=0
+2016-17|2024-25|Gary Porter|Base Soccer Agency||Sunderland|Coventry City|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Nathan Campbell-Welch|||Arsenal|Lincoln City|conflict=0|single=0|multi_firm=0
+2017-18|2018-19|Darren Dein|Double D||Millwall|Watford|conflict=0|single=0|multi_firm=0
+2018-19|2023-24|Philip Korklin|Momentum Sports Management Ltd||Stevenage|AFC Fylde|conflict=0|single=0|multi_firm=1
+2015-16|2023-24|Paul Masterton|First E11even Sports Management||Oxford United|Manchester United|conflict=0|single=0|multi_firm=1
+2016-17|2017-18|James Tunnicliffe|Unique Sports Management|Unique Sports Management|Shrewsbury Town|Luton Town|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Marlon Fleischmann|||Swansea City|Stoke City|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Lee Charles Mudd|||Sunderland|South Shields|conflict=0|single=0|multi_firm=0
+2016-17|2024-25|Mark Aspinall|Unique Sports Management||Chesterfield|Milton Keynes Dons|conflict=0|single=0|multi_firm=1
+2023-24|2025-26|Leon Angel|||Chelsea|Tottenham Hotspur|conflict=0|single=0|multi_firm=1
+2015-16|2018-19|Warwick Horton|Key Sports Management|Key Sports Management|Brentford|Burnley|conflict=0|single=0|multi_firm=0
+2023-24|2024-25|Philip Korklin|||Aldershot Town|Crawley Town|conflict=0|single=0|multi_firm=1
+2018-19|2024-25|Mark Aspinall|MAC Sports Management||Manchester United|Oldham Athletic|conflict=0|single=0|multi_firm=1
+2015-16|2023-24|William Pethybridge|World In Motion||Swindon Town|AFC Bournemouth|conflict=0|single=0|multi_firm=1
+2016-17|2017-18|Jake Speight|Fifteen Eleven Management|Fifteen Eleven Management|Carlisle|Kidderminster Harriers|conflict=0|single=0|multi_firm=1
+2017-18|2018-19|David Timms|Fifteen Eleven Management|Fifteen Eleven Management|Burton Albion|Kidderminster Harriers|conflict=0|single=0|multi_firm=0
+2015-16|2016-17|Jake Speight|Fifteen Eleven Management|Fifteen Eleven Management|FC Halifax Town|Guiseley AFC|conflict=0|single=0|multi_firm=1
+2018-19|2025-26|Mark Aspinall|MAC Sports Management||Manchester United|Burton Albion|conflict=0|single=0|multi_firm=1
+2018-19|2023-24|Kiavash Joorabchian|Sport Invest UK||West Ham United|Aston Villa|conflict=0|single=0|multi_firm=1
+2018-19|2024-25|Gareth Jones|Full Ninety||Carlisle United|Southampton|conflict=0|single=0|multi_firm=1
+2018-19|2025-26|Robert Woods|SUPREME SPORTS MANAGEMENT LTD||Ipswich Town|Maidenhead United|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|James Garley|||York City|Barrow|conflict=0|single=0|multi_firm=0
+2018-19|2024-25|Gareth Jones|Full Ninety||Mansfield Town|Portsmouth|conflict=0|single=0|multi_firm=1
+2016-17|2023-24|Tamas Byrne|Wasserman Media Group||Burnley|Cardiff City|conflict=0|single=0|multi_firm=1
+2015-16|2016-17|Daniel Naisbitt|First Artist Company|GK1|Norwich City|Peterborough United|conflict=1|single=0|multi_firm=1
+2018-19|2024-25|John Morris|Key Sports Management||Sheffield United|Southampton|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Steven Robert Beck|||Wigan Athletic|Blackburn Rovers|conflict=0|single=0|multi_firm=0
+2016-17|2018-19|Ian Ryder|Unique Sports Management|Unique Sports Management|AFC Wimbledon|AFC Bournemouth|conflict=0|single=0|multi_firm=0
+2016-17|2018-19|Thomas Evans|Murdock Sports Management|Murdock Sports Management|Wigan Athletic|Queens Park Rangers|conflict=0|single=0|multi_firm=0
+2017-18|2018-19|Simon Marsh|Michael Owen Management Ltd|Michael Owen Management|Swansea City|Notts County|conflict=0|single=0|multi_firm=1
+2017-18|2023-24|Mark Gottlieb|Progress Management||Chelsea|Brentford|conflict=0|single=0|multi_firm=1
+2017-18|2018-19|Paolo Vernazza|Platinum One Sports Management|Platinum One Sports Management|Barnsley|Eastleigh|conflict=0|single=0|multi_firm=1
+2018-19|2025-26|Daniel Philpott|Base Soccer Agency||Everton|Bristol City|conflict=0|single=0|multi_firm=0
+2018-19|2023-24|Philip Korklin|Momentum Sports Management Ltd||Bristol Rovers|Burton Albion|conflict=0|single=0|multi_firm=1
+2023-24|2024-25|Alan Redmond|||Crystal Palace|Fulham|conflict=0|single=0|multi_firm=0
+2018-19|2023-24|Stephen Hunt|Stephen Hunt Management||Reading|Wycombe Wanderers|conflict=0|single=0|multi_firm=1
+2016-17|2018-19|Mustafa Mehmood|Inspire Sports Management|Inspire Sports Management|Solihull Moors|Blackpool|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|Christopher Paul Morgan|||Scarborough Athletic|Bradford City|conflict=0|single=0|multi_firm=0
+2017-18|2018-19|Dan Chapman|Full Contact|Full Contact|Salford City|Coventry City|conflict=0|single=0|multi_firm=0
+2015-16|2023-24|Simon Conning|Simon Conning Consulting||Burnley|Sunderland|conflict=0|single=0|multi_firm=1
+2015-16|2017-18|David Lockwood|Stellar|Stellar Football Limited|Liverpool|Brentford|conflict=1|single=0|multi_firm=1
+2016-17|2018-19|Paul Nicholls|Elite Management Agency|Elite Management Agency|Leicester City|Millwall|conflict=0|single=0|multi_firm=0
+2018-19|2024-25|Leon Anderson|F2 Talent||Huddersfield Town|Leyton Orient|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|James Black|||Lincoln City|Exeter City|conflict=0|single=0|multi_firm=1
+2018-19|2025-26|Maxim Ferdinand|New Era Global Sports Management||Wolverhampton Wanderers|Millwall|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Jonathan Hassall|||Notts County|Oldham Athletic|conflict=0|single=0|multi_firm=1
+2017-18|2024-25|James Skelland|James Grant Sports||Tottenham Hotspur|Southend United|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Marco Ivanovich|||Carlisle United|Salford City|conflict=0|single=0|multi_firm=0
+2018-19|2023-24|Lee Matthews|Sports Management International||Sheffield Wednesday|Liverpool|conflict=0|single=0|multi_firm=1
+2018-19|2023-24|Tamas Byrne|WMG Management Europe Ltd||Nottingham Forest|Leeds United|conflict=0|single=0|multi_firm=1
+2015-16|2016-17|Dean Baker|Wasserman Media Group|Wasserman Media Group|Liverpool|Burton Albion|conflict=0|single=0|multi_firm=1
+2016-17|2023-24|James Welch|Quantum Law||Sunderland|Newcastle United|conflict=0|single=0|multi_firm=1
+2016-17|2017-18|Jeroen Hoogewerf|SEG International|SEG Football BV|Norwich City|Walsall (to Apoel FC)|conflict=1|single=0|multi_firm=1
+2018-19|2024-25|Magnus Agnar Magnusson|Total Football||Brentford|Stockport County|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Paul Darren Nicholls|||Swindon Town|Milton Keynes Dons|conflict=0|single=0|multi_firm=0
+2016-17|2024-25|Richard Tounsi Fotso|||Macclesfield Town|Truro City|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Mark Aspinall|||Tranmere Rovers|Fleetwood Town|conflict=0|single=0|multi_firm=1
+2017-18|2023-24|David Lockwood|Stellar Football Limited||Liverpool|Manchester United|conflict=0|single=0|multi_firm=1
+2017-18|2024-25|Mark Obern|Sport Management International||Chesterfield|Ipswich Town|conflict=0|single=0|multi_firm=1
+2017-18|2024-25|Mark Obern|SMI||Stevenage|Millwall|conflict=0|single=0|multi_firm=1
+2015-16|2016-17|James Featherstone|Omni Sports Management Ltd|Omnisports|Birmingham City|Birmingham City|conflict=1|single=0|multi_firm=1
+2016-17|2023-24|Andrew Niedzwiecki|10Ten Football Limited||Birmingham City|Chelsea|conflict=0|single=0|multi_firm=1
+2023-24|2024-25|Arfan Rehman|||Port Vale|Burton Albion|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Paul Darren Nicholls|||Cheltenham Town|Stevenage|conflict=0|single=0|multi_firm=0
+2016-17|2017-18|Gary Porter|Base Soccer Agency|Base Soccer Agency|Bradford City|Sunderland|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Scott Barron|||Ipswich Town|Bristol Rovers|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Michael Drew|||Stockport County|Stevenage|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|Scott James Dutton|||Accrington Stanley|Sutton United|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Nathan Campbell-Welch|||Manchester United|Norwich City|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|James Black|||Barnsley|Plymouth Argyle|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|James Garley|||Braintree Town|Altrincham|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|James Black|||FC Halifax Town|Fc Halifax Town|conflict=0|single=0|multi_firm=1
+2018-19|2023-24|Graham Barrett|Platinum One Sports Management||Brighton & Hove Albion|Lincoln City|conflict=0|single=0|multi_firm=0
+2015-16|2018-19|Eliot Van Til|Sports Invest|Sport Invest UK Ltd|AFC Bournemouth|Luton Town|conflict=1|single=0|multi_firm=1
+2024-25|2025-26|Daniel Josef Williams|||Bristol City|Northampton Town|conflict=0|single=0|multi_firm=0
+2017-18|2018-19|James Featherstone|Omnisports|Omnisports Ltd|Manchester United|Birmingham City|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|William Salthouse|||Crystal Palace|West Ham United|conflict=0|single=0|multi_firm=0
+2023-24|2024-25|Mark Obern|||Plymouth Argyle|Stoke City|conflict=0|single=0|multi_firm=1
+2024-25|2025-26|Steven Kabba|||Burton Albion|Huddersfield Town|conflict=0|single=0|multi_firm=0
+2017-18|2023-24|Steven Beck|Triple S Sports & Entertainment Group||Wigan Athletic|Liverpool|conflict=0|single=0|multi_firm=0
+2016-17|2024-25|James Skelland|James Grant Sports||Stevenage|Southend United|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Henry Croft|||Sheffield United|Ipswich Town|conflict=0|single=0|multi_firm=0
+2017-18|2024-25|Emeka Obasi|||Millwall|Fulham|conflict=0|single=0|multi_firm=1
+2015-16|2017-18|Colin Murdock|Murdock Sports Management|Murdock Sports Management|Manchester United|Manchester United|conflict=0|single=0|multi_firm=1
+2017-18|2024-25|Chris Lomas|Strike Management Ltd||Ipswich Town|Northampton Town|conflict=0|single=0|multi_firm=0
+2024-25|2025-26|Scott James Dutton|||Bromley|Kidderminster Harriers|conflict=0|single=0|multi_firm=0
+2016-17|2024-25|Struan Marshall|Wasserman Media Group||AFC Bournemouth|Oxford United|conflict=0|single=0|multi_firm=1
+2017-18|2023-24|Lee Matthews|Sports Management International||Crystal Palace|Wycombe Wanderers|conflict=0|single=0|multi_firm=1
+2016-17|2017-18|John Paul Mowberry|ProLegal Sports Management|RASF Ltd|Brighton & Hove Albion|Liverpool|conflict=1|single=0|multi_firm=1
+2015-16|2025-26|David Buncall|Code 4 Sports||Morecambe|Newport County|conflict=0|single=0|multi_firm=0
+2015-16|2025-26|Pierre Frelot|XL Sport||Crystal Palace|Norwich City|conflict=0|single=0|multi_firm=1
+2017-18|2025-26|William Pethybridge|World in Motion||Peterborough United|Charlton Athletic|conflict=0|single=0|multi_firm=1
+2015-16|2016-17|Colin Murdock|Murdock Sports Management|Murdock Sports Management|Manchester United|Manchester United|conflict=0|single=0|multi_firm=1
+2015-16|2017-18|Will Sherling|Absolute Sports Consultants|Absolute Sports Consultants|Exeter City|Exeter City|conflict=0|single=0|multi_firm=0
+2015-16|2018-19|Mario Weber|ESHA Sportmarketing|ESHA Sportsmarketing GmbH|Stoke City|Liverpool|conflict=1|single=0|multi_firm=1

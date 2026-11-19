@@ -1,0 +1,97 @@
+run,model,fixed_effects,term,events,alternatives,agents,odds_ratio,lo,hi,p
+"1 primary: ID match, 2019-20 to 2022-23, same division",A any prior dealing,FALSE,any_prior,1451,35769,674,2.068,1.746,2.451,4.64e-17
+"1 primary: ID match, 2019-20 to 2022-23, same division",A any prior dealing,TRUE,any_prior,1451,32392,674,1.778,1.486,2.128,3.38e-10
+"1 primary: ID match, 2019-20 to 2022-23, same division",B club-side vs player-side-only prior dealing,FALSE,club_side,1451,35769,674,2.091,1.744,2.507,1.67e-15
+"1 primary: ID match, 2019-20 to 2022-23, same division",B club-side vs player-side-only prior dealing,FALSE,player_only,1451,35769,674,1.939,1.443,2.605,1.11e-05
+"1 primary: ID match, 2019-20 to 2022-23, same division",B club-side vs player-side-only prior dealing,TRUE,club_side,1451,32392,674,1.759,1.449,2.136,1.12e-08
+"1 primary: ID match, 2019-20 to 2022-23, same division",B club-side vs player-side-only prior dealing,TRUE,player_only,1451,32392,674,1.896,1.378,2.609,8.47e-05
+"1 primary: ID match, 2019-20 to 2022-23, same division",C club-side-only (agent not on player side) vs other prior dealing,FALSE,club_only,1451,35769,674,1.996,1.28,3.114,0.00232
+"1 primary: ID match, 2019-20 to 2022-23, same division",C club-side-only (agent not on player side) vs other prior dealing,FALSE,player_only,1451,35769,674,1.535,1.136,2.075,0.00532
+"1 primary: ID match, 2019-20 to 2022-23, same division",C club-side-only (agent not on player side) vs other prior dealing,TRUE,club_only,1451,32392,674,1.806,1.182,2.759,0.00626
+"1 primary: ID match, 2019-20 to 2022-23, same division",C club-side-only (agent not on player side) vs other prior dealing,TRUE,player_only,1451,32392,674,1.609,1.16,2.232,0.00435
+"1 primary: ID match, 2019-20 to 2022-23, same division",D number of prior dealings (log1p),FALSE,log_n,1451,35769,674,2.197,1.83,2.637,3.18e-17
+"1 primary: ID match, 2019-20 to 2022-23, same division",D number of prior dealings (log1p),TRUE,log_n,1451,32392,674,1.868,1.533,2.277,5.7e-10
+"1 primary: ID match, 2019-20 to 2022-23, same division",E recency: dealing in the previous period vs two or more periods earlier,FALSE,any_prev,1451,35769,674,1.861,1.556,2.227,1.05e-11
+"1 primary: ID match, 2019-20 to 2022-23, same division",E recency: dealing in the previous period vs two or more periods earlier,FALSE,any_old,1451,35769,674,1.661,1.343,2.056,3e-06
+"1 primary: ID match, 2019-20 to 2022-23, same division",E recency: dealing in the previous period vs two or more periods earlier,TRUE,any_prev,1451,32392,674,1.603,1.303,1.972,8.01e-06
+"1 primary: ID match, 2019-20 to 2022-23, same division",E recency: dealing in the previous period vs two or more periods earlier,TRUE,any_old,1451,32392,674,1.553,1.249,1.931,7.35e-05
+"1 primary: ID match, 2019-20 to 2022-23, same division","F any prior dealing, controlling for the club's number of earlier intermediaries",FALSE,any_prior,1451,35769,674,1.766,1.481,2.107,2.51e-10
+"1 primary: ID match, 2019-20 to 2022-23, same division","F any prior dealing, controlling for the club's number of earlier intermediaries",FALSE,log_club_agents,1451,35769,674,1.923,1.733,2.134,8.09e-35
+"1 primary: ID match, 2019-20 to 2022-23, same division","F any prior dealing, controlling for the club's number of earlier intermediaries",TRUE,any_prior,1451,32392,674,1.786,1.49,2.14,3.42e-10
+"1 primary: ID match, 2019-20 to 2022-23, same division","F any prior dealing, controlling for the club's number of earlier intermediaries",TRUE,log_club_agents,1451,32392,674,0.245,0.103,0.586,0.00156
+"2 primary, agent not also on the club side of the focal deal",A any prior dealing,FALSE,any_prior,233,5515,178,1.891,1.119,3.195,0.0173
+"2 primary, agent not also on the club side of the focal deal",A any prior dealing,TRUE,any_prior,233,3950,178,1.738,0.987,3.061,0.0556
+"2 primary, agent not also on the club side of the focal deal",B club-side vs player-side-only prior dealing,FALSE,club_side,233,5515,178,1.668,0.937,2.969,0.0822
+"2 primary, agent not also on the club side of the focal deal",B club-side vs player-side-only prior dealing,FALSE,player_only,233,5515,178,2.809,1.55,5.089,0.000661
+"2 primary, agent not also on the club side of the focal deal",B club-side vs player-side-only prior dealing,TRUE,club_side,233,3950,178,1.758,0.947,3.263,0.0739
+"2 primary, agent not also on the club side of the focal deal",B club-side vs player-side-only prior dealing,TRUE,player_only,233,3950,178,1.692,0.891,3.215,0.108
+"2 primary, agent not also on the club side of the focal deal",C club-side-only (agent not on player side) vs other prior dealing,FALSE,club_only,233,5515,178,1.627,0.549,4.82,0.38
+"2 primary, agent not also on the club side of the focal deal",C club-side-only (agent not on player side) vs other prior dealing,FALSE,player_only,233,5515,178,2.429,1.397,4.223,0.00166
+"2 primary, agent not also on the club side of the focal deal",C club-side-only (agent not on player side) vs other prior dealing,TRUE,club_only,233,3950,178,1.348,0.39,4.654,0.637
+"2 primary, agent not also on the club side of the focal deal",C club-side-only (agent not on player side) vs other prior dealing,TRUE,player_only,233,3950,178,1.485,0.827,2.667,0.186
+"2 primary, agent not also on the club side of the focal deal",D number of prior dealings (log1p),FALSE,log_n,233,5515,178,1.927,0.965,3.848,0.063
+"2 primary, agent not also on the club side of the focal deal",D number of prior dealings (log1p),TRUE,log_n,233,3950,178,1.783,0.873,3.643,0.112
+"3 name match, 2019-20 to 2022-23",A any prior dealing,FALSE,any_prior,1451,35769,674,2.078,1.757,2.458,1.24e-17
+"3 name match, 2019-20 to 2022-23",A any prior dealing,TRUE,any_prior,1451,32392,674,1.787,1.496,2.134,1.45e-10
+"3 name match, 2019-20 to 2022-23",B club-side vs player-side-only prior dealing,FALSE,club_side,1451,35769,674,2.097,1.753,2.509,5.2e-16
+"3 name match, 2019-20 to 2022-23",B club-side vs player-side-only prior dealing,FALSE,player_only,1451,35769,674,1.967,1.456,2.657,1.06e-05
+"3 name match, 2019-20 to 2022-23",B club-side vs player-side-only prior dealing,TRUE,club_side,1451,32392,674,1.761,1.455,2.131,5.94e-09
+"3 name match, 2019-20 to 2022-23",B club-side vs player-side-only prior dealing,TRUE,player_only,1451,32392,674,1.95,1.414,2.689,4.6e-05
+"3 name match, 2019-20 to 2022-23",C club-side-only (agent not on player side) vs other prior dealing,FALSE,club_only,1451,35769,674,1.866,1.203,2.894,0.00533
+"3 name match, 2019-20 to 2022-23",C club-side-only (agent not on player side) vs other prior dealing,FALSE,player_only,1451,35769,674,1.561,1.149,2.12,0.00436
+"3 name match, 2019-20 to 2022-23",C club-side-only (agent not on player side) vs other prior dealing,TRUE,club_only,1451,32392,674,1.691,1.106,2.584,0.0152
+"3 name match, 2019-20 to 2022-23",C club-side-only (agent not on player side) vs other prior dealing,TRUE,player_only,1451,32392,674,1.658,1.195,2.3,0.00249
+"3 name match, 2019-20 to 2022-23",D number of prior dealings (log1p),FALSE,log_n,1451,35769,674,2.217,1.844,2.666,2.57e-17
+"3 name match, 2019-20 to 2022-23",D number of prior dealings (log1p),TRUE,log_n,1451,32392,674,1.883,1.544,2.298,4.46e-10
+"3 name match, 2019-20 to 2022-23",E recency: dealing in the previous period vs two or more periods earlier,FALSE,any_prev,1451,35769,674,1.919,1.603,2.297,1.2e-12
+"3 name match, 2019-20 to 2022-23",E recency: dealing in the previous period vs two or more periods earlier,FALSE,any_old,1451,35769,674,1.629,1.311,2.025,1.09e-05
+"3 name match, 2019-20 to 2022-23",E recency: dealing in the previous period vs two or more periods earlier,TRUE,any_prev,1451,32392,674,1.654,1.34,2.043,2.88e-06
+"3 name match, 2019-20 to 2022-23",E recency: dealing in the previous period vs two or more periods earlier,TRUE,any_old,1451,32392,674,1.517,1.215,1.894,0.000232
+"3 name match, 2019-20 to 2022-23","F any prior dealing, controlling for the club's number of earlier intermediaries",FALSE,any_prior,1451,35769,674,1.776,1.492,2.115,1.15e-10
+"3 name match, 2019-20 to 2022-23","F any prior dealing, controlling for the club's number of earlier intermediaries",FALSE,log_club_agents,1451,35769,674,1.923,1.733,2.135,1.28e-34
+"3 name match, 2019-20 to 2022-23","F any prior dealing, controlling for the club's number of earlier intermediaries",TRUE,any_prior,1451,32392,674,1.793,1.5,2.144,1.47e-10
+"3 name match, 2019-20 to 2022-23","F any prior dealing, controlling for the club's number of earlier intermediaries",TRUE,log_club_agents,1451,32392,674,0.247,0.103,0.59,0.00165
+"4 name match, 2019-20 to 2025-26",A any prior dealing,FALSE,any_prior,3268,83131,1527,1.838,1.628,2.074,6.04e-23
+"4 name match, 2019-20 to 2025-26",A any prior dealing,TRUE,any_prior,3268,75261,1527,1.624,1.439,1.832,3.36e-15
+"4 name match, 2019-20 to 2025-26",B club-side vs player-side-only prior dealing,FALSE,club_side,3268,83131,1527,1.858,1.628,2.121,4.4e-20
+"4 name match, 2019-20 to 2025-26",B club-side vs player-side-only prior dealing,FALSE,player_only,3268,83131,1527,1.748,1.418,2.154,1.65e-07
+"4 name match, 2019-20 to 2025-26",B club-side vs player-side-only prior dealing,TRUE,club_side,3268,75261,1527,1.628,1.426,1.859,6.26e-13
+"4 name match, 2019-20 to 2025-26",B club-side vs player-side-only prior dealing,TRUE,player_only,3268,75261,1527,1.605,1.297,1.986,1.33e-05
+"4 name match, 2019-20 to 2025-26",C club-side-only (agent not on player side) vs other prior dealing,FALSE,club_only,3268,83131,1527,1.656,1.253,2.19,0.000396
+"4 name match, 2019-20 to 2025-26",C club-side-only (agent not on player side) vs other prior dealing,FALSE,player_only,3268,83131,1527,1.483,1.205,1.824,0.000197
+"4 name match, 2019-20 to 2025-26",C club-side-only (agent not on player side) vs other prior dealing,TRUE,club_only,3268,75261,1527,1.53,1.17,2,0.00191
+"4 name match, 2019-20 to 2025-26",C club-side-only (agent not on player side) vs other prior dealing,TRUE,player_only,3268,75261,1527,1.42,1.148,1.756,0.00121
+"4 name match, 2019-20 to 2025-26",D number of prior dealings (log1p),FALSE,log_n,3268,83131,1527,1.874,1.645,2.135,3.55e-21
+"4 name match, 2019-20 to 2025-26",D number of prior dealings (log1p),TRUE,log_n,3268,75261,1527,1.645,1.443,1.875,9.29e-14
+"4 name match, 2019-20 to 2025-26",E recency: dealing in the previous period vs two or more periods earlier,FALSE,any_prev,3268,83131,1527,1.804,1.562,2.083,1.02e-15
+"4 name match, 2019-20 to 2025-26",E recency: dealing in the previous period vs two or more periods earlier,FALSE,any_old,3268,83131,1527,1.433,1.236,1.661,1.87e-06
+"4 name match, 2019-20 to 2025-26",E recency: dealing in the previous period vs two or more periods earlier,TRUE,any_prev,3268,75261,1527,1.621,1.392,1.889,5.66e-10
+"4 name match, 2019-20 to 2025-26",E recency: dealing in the previous period vs two or more periods earlier,TRUE,any_old,3268,75261,1527,1.324,1.147,1.529,0.000125
+"4 name match, 2019-20 to 2025-26","F any prior dealing, controlling for the club's number of earlier intermediaries",FALSE,any_prior,3268,83131,1527,1.636,1.452,1.843,5.6e-16
+"4 name match, 2019-20 to 2025-26","F any prior dealing, controlling for the club's number of earlier intermediaries",FALSE,log_club_agents,3268,83131,1527,1.822,1.692,1.962,9.17e-57
+"4 name match, 2019-20 to 2025-26","F any prior dealing, controlling for the club's number of earlier intermediaries",TRUE,any_prior,3268,75261,1527,1.627,1.443,1.835,2.28e-15
+"4 name match, 2019-20 to 2025-26","F any prior dealing, controlling for the club's number of earlier intermediaries",TRUE,log_club_agents,3268,75261,1527,0.751,0.494,1.141,0.18
+"5 primary, tier-group choice sets",A any prior dealing,FALSE,any_prior,1451,47520,674,2.102,1.771,2.495,1.76e-17
+"5 primary, tier-group choice sets",A any prior dealing,TRUE,any_prior,1451,44091,674,1.797,1.501,2.15,1.69e-10
+"5 primary, tier-group choice sets",B club-side vs player-side-only prior dealing,FALSE,club_side,1451,47520,674,2.123,1.769,2.549,6.98e-16
+"5 primary, tier-group choice sets",B club-side vs player-side-only prior dealing,FALSE,player_only,1451,47520,674,1.979,1.473,2.66,5.94e-06
+"5 primary, tier-group choice sets",B club-side vs player-side-only prior dealing,TRUE,club_side,1451,44091,674,1.774,1.459,2.156,9.05e-09
+"5 primary, tier-group choice sets",B club-side vs player-side-only prior dealing,TRUE,player_only,1451,44091,674,1.941,1.411,2.67,4.6e-05
+"5 primary, tier-group choice sets",C club-side-only (agent not on player side) vs other prior dealing,FALSE,club_only,1451,47520,674,2.014,1.306,3.108,0.00155
+"5 primary, tier-group choice sets",C club-side-only (agent not on player side) vs other prior dealing,FALSE,player_only,1451,47520,674,1.566,1.162,2.109,0.00317
+"5 primary, tier-group choice sets",C club-side-only (agent not on player side) vs other prior dealing,TRUE,club_only,1451,44091,674,1.802,1.189,2.73,0.00547
+"5 primary, tier-group choice sets",C club-side-only (agent not on player side) vs other prior dealing,TRUE,player_only,1451,44091,674,1.651,1.193,2.284,0.0025
+"5 primary, tier-group choice sets",D number of prior dealings (log1p),FALSE,log_n,1451,47520,674,2.225,1.858,2.664,3.16e-18
+"5 primary, tier-group choice sets",D number of prior dealings (log1p),TRUE,log_n,1451,44091,674,1.883,1.549,2.29,2.12e-10
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",A any prior dealing,FALSE,any_prior,1451,35769,674,2.113,1.731,2.578,1.87e-13
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",A any prior dealing,TRUE,any_prior,1451,32392,674,1.873,1.543,2.273,2.24e-10
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",B club-side vs player-side-only prior dealing,FALSE,club_side,1451,35769,674,2.11,1.705,2.612,6.8e-12
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",B club-side vs player-side-only prior dealing,FALSE,player_only,1451,35769,674,2.126,1.461,3.094,8.1e-05
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",B club-side vs player-side-only prior dealing,TRUE,club_side,1451,32392,674,1.84,1.495,2.264,8.69e-09
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",B club-side vs player-side-only prior dealing,TRUE,player_only,1451,32392,674,2.083,1.41,3.077,0.000228
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",C club-side-only (agent not on player side) vs other prior dealing,FALSE,club_only,1451,35769,674,2.438,1.474,4.033,0.000521
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",C club-side-only (agent not on player side) vs other prior dealing,FALSE,player_only,1451,35769,674,1.828,1.251,2.672,0.00182
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",C club-side-only (agent not on player side) vs other prior dealing,TRUE,club_only,1451,32392,674,2.116,1.275,3.511,0.00374
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",C club-side-only (agent not on player side) vs other prior dealing,TRUE,player_only,1451,32392,674,1.863,1.257,2.761,0.00193
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",D number of prior dealings (log1p),FALSE,log_n,1451,35769,674,2.287,1.849,2.829,2.44e-14
+"6 name match, 2019-20 to 2022-23, ambiguous names removed",D number of prior dealings (log1p),TRUE,log_n,1451,32392,674,2,1.618,2.472,1.47e-10

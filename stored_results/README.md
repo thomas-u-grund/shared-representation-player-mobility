@@ -17,4 +17,8 @@ label (`label_lo`, `label_hi`) and by player (`player_id_lo`, `player_id_hi`).
 | `matched_agencies_value_results.csv` | `09_matched_agencies_value.R` |
 | `label_audit_results.csv` | `10_label_audit.R` |
 | `club_resources_results.csv` | `11_club_resources.R` |
+| `co_client_background_results.csv`, `co_client_background_counts.csv` | `12_co_client_background.R` (Online Appendix B10) |
+| `agency_concentration.csv`, `agency_concentration_results.csv`, `league_heterogeneity.csv`, `league_results_by_league.csv` | `13_agency_concentration_leagues.R` (Online Appendix B11, B12) |
+| `fa_choice_results.csv` | `study2_fa_reports/fa_choice_model.R` (Study 2: Table 4 and B13; odds ratios with 95% CI clustered by intermediary, columns `lo`, `hi`) |
+| `fa_audit_results.csv`, `fa_audit_counts.csv` | `study2_fa_reports/fa_audit_model.R` (Study 2: renewal model, one observation per signing, club-by-period effects, link audit) |
 | `table_estimates.csv`, `figures/` | `R/report/make_tables.R` (rows of the paper’s tables; Figure 1 and Figure A1) |
