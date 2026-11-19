@@ -45,6 +45,6 @@ The labels `R1`, `R2`, … and `V …` in model names only identify blocks of an
 
 ## Licence and citation
 
-MIT licence for code and result tables (`LICENSE`); third-party data are not covered. `CHECKSUMS.sha256` lists the SHA-256 of every file in the repository.
+MIT licence for code and result tables (`LICENSE`); third-party data are not covered.
 
 [Add the full citation and DOI of the paper and of the archived release after acceptance.]
