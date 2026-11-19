@@ -9,7 +9,8 @@ Exposure is strictly pre-period: history for a focal record comes only from repo
 import re, unicodedata
 import pandas as pd
 from pathlib import Path
-ROOT = Path(__file__).parent
+HERE = Path(__file__).parent
+ROOT = HERE.parent   # study2_fa_reports/
 D = pd.read_csv(ROOT / "fa_transactions_long.csv", dtype=str, keep_default_na=False)
 PERIODS = ["2015-16", "2016-17", "2017-18", "2018-19", "2019-20", "2020-21", "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
 ORD = {p: i for i, p in enumerate(PERIODS)}
@@ -57,7 +58,7 @@ for p in PERIODS:
                      share_subcontractor_yes=(x.subcontractor == "YES").mean(), rows_flagged=(x["flags"] != "").sum(), manual_repairs=x["flags"].str.contains("manual wrap").sum(),
                      unparsed_lines=int((unp.period == p).sum())))
 A = pd.DataFrame(rows)
-A.round(3).to_csv(ROOT / "audit_by_period.csv", index=False)
+A.round(3).to_csv(HERE / "audit_by_period.csv", index=False)
 
 # name consistency across periods: normalised club key present in the previous period?
 cl = []
@@ -66,7 +67,7 @@ for p in PERIODS[1:]:
     allprev = set(D[D.ord < ORD[p]].club_k)
     cl.append(dict(period=p, clubs=len(cur), in_previous_period=len(cur & prev), in_any_earlier_period=len(cur & allprev), not_seen_before=len(cur - allprev),
                    examples_not_seen_before="; ".join(sorted(cur - allprev)[:12])))
-pd.DataFrame(cl).to_csv(ROOT / "audit_club_names.csv", index=False)
+pd.DataFrame(cl).to_csv(HERE / "audit_club_names.csv", index=False)
 
 # ---------------------------------------------------------------- first number
 def history_flags(f, hist):
@@ -120,8 +121,8 @@ for p in PERIODS[4:]:   # periods with a reg_type column
             for r, (a, b, c, d) in zip(f.itertuples(), fl):
                 if a: ex.append(dict(period=p, club=r.registering_club, player=r.player, agent=r.agent_name))
 R = pd.DataFrame(res)
-R.to_csv(ROOT / "first_number_by_period.csv", index=False)
-pd.DataFrame(ex).head(60).to_csv(ROOT / "first_number_examples.csv", index=False)
+R.to_csv(HERE / "first_number_by_period.csv", index=False)
+pd.DataFrame(ex).head(60).to_csv(HERE / "first_number_examples.csv", index=False)
 print(A.round(3).to_string())
 print(pd.DataFrame(cl).drop(columns="examples_not_seen_before").to_string())
 print(R.to_string())

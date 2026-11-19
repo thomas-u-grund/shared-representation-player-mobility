@@ -5,7 +5,7 @@ import csv, random, re, unicodedata, collections
 def norm(s):
     s = unicodedata.normalize('NFKD', s or '').encode('ascii', 'ignore').decode().lower(); s = re.sub(r'\(.*?\)', ' ', s); s = re.sub(r'[^a-z0-9& ]+', ' ', s)
     return ' '.join(w for w in s.split() if w not in ('ltd', 'limited', 'llp', 'plc', 'the', 'uk', 'sl', 'gmbh'))
-R = list(csv.DictReader(open('fa_transactions_long.csv', encoding='utf8')))
+R = list(csv.DictReader(open(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)),'..','fa_transactions_long.csv'), encoding='utf8')))
 PER = sorted(set(x['period'] for x in R)); idy = ['2019-20', '2020-21', '2021-22', '2022-23']
 for x in R: x['nm'] = norm(x['agent_name']); x['fm'] = norm(x['agent_firm'])
 random.seed(20260419)
@@ -44,6 +44,6 @@ for a, b in sb:
     conf += c; single += s; multi += m
     lines.append(f"{a['period']}|{b['period']}|{a['agent_name']}|{a['agent_firm']}|{b['agent_firm']}|{a['registering_club']}|{b['registering_club']}|conflict={int(c)}|single={int(s)}|multi_firm={int(m)}")
 print(f'B: 100 random cross-period name matches in periods without IDs: firm conflict {conf}, single-word name {single}, name linked to >1 firm in the data {multi}')
-open('audit_name_matching_sample_noid.txt', 'w', encoding='utf8').write('\n'.join(lines))
+open(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)),'audit_name_matching_sample_noid.txt'), 'w', encoding='utf8').write('\n'.join(lines))
 # firm-based tie-break coverage: share of no-ID rows with a firm field
 print('share of rows with firm field, by period:', {p: round(sum(1 for x in R if x['period'] == p and x['fm']) / max(1, sum(1 for x in R if x['period'] == p)), 2) for p in PER})
