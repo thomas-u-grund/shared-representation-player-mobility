@@ -134,8 +134,7 @@ checks <- list(grp("Move type (loan-like: no fee and back at the origin club wit
   crow("Ratio: lower half to upper half", t4, "R1 same x lower half of league by squad value", "lower minus higher"))
 at$APP_CHECKS <- table_md("Table B9. Further checks: move type, labels and club resources", headers, checks, "Odds ratios for a co-client at the destination club from conditional logits with destination club fixed effects, prior flows and the controls of Table 2; intervals cluster by representative. The main sample has 2,000 events and an odds ratio of 1.37 (1.16–1.62). The three move-type rows come from one model fitted to all 2,000 events with the co-client indicator split by move type, so their Events column repeats the full sample; the counts in brackets are the events of each type. Return moves are read from the full transfer record, which has no loan flag, so the loan-like class is a proxy.")
 
-# Study 2 estimates are stored rounded to three decimals; two-decimal display rounds those half up (as the paper does)
-f2h <- function(x) sprintf("%.2f", floor(x * 100 + 0.5 + 1e-7) / 100)
+f2h <- function(x) sprintf("%.2f", x)
 # ---- Study 2 (English FA records): Table 4 and Table B13, from the stored estimates of study2_fa_reports/
 fc <- R("fa_choice_results.csv"); fau <- R("fa_audit_results.csv")
 fa_c <- function(lab, rn, mod, trm, fe = TRUE) { k <- which(substr(fc$run, 1, 1) == rn & startsWith(fc$model, mod) & fc$term == trm & fc$fixed_effects == fe); stopifnot(length(k) == 1); r <- fc[k]

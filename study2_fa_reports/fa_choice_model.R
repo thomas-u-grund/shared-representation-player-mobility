@@ -121,6 +121,6 @@ for (r in runs) {
 }
 I <- rbindlist(infos)
 fwrite(I[, .(events = .N, informative_events = sum(inf), events_where_chosen_club_exposed = sum(chosen_exp)), by = .(run, exposure, period)], file.path(outdir, "fa_choice_informative_events.csv"))
-R <- rbindlist(res); R[, `:=`(odds_ratio = round(odds_ratio, 3), lo = round(lo, 3), hi = round(hi, 3), p = signif(p, 3))]
+R <- rbindlist(res); R[, `:=`(odds_ratio = round(odds_ratio, 6), lo = round(lo, 6), hi = round(hi, 6), p = signif(p, 3))]
 fwrite(R[, .(run, model, fixed_effects, term, events, alternatives, agents, odds_ratio, lo, hi, p)], file.path(outdir, "fa_choice_results.csv"))
 print(R[, .(run = substr(run, 1, 34), model = substr(model, 1, 26), fe = fixed_effects, term, events, or = odds_ratio, lo, hi)], nrows = 200)

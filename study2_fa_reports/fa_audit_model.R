@@ -115,6 +115,6 @@ for (nm in c("S3a", "S3b")) { S <- get(nm); lab <- c(S3a = "ID-matched 2020-21..
                                       chosen_club_renewal = sum(S$club_renew * S$chosen), chosen_club_other = sum(S$club_other * S$chosen), chosen_player_only = sum(S$player_only * S$chosen))
   runspec(S, "3", lab, specs = list(A = SPA, R = c("club_renew", "club_other", "player_only")))
 }
-R <- rbindlist(RES, fill = TRUE); R[, `:=`(odds_ratio = round(odds_ratio, 3), lo = round(lo, 3), hi = round(hi, 3), p = signif(p, 3))]
+R <- rbindlist(RES, fill = TRUE); R[, `:=`(odds_ratio = round(odds_ratio, 6), lo = round(lo, 6), hi = round(hi, 6), p = signif(p, 3))]
 fwrite(R, file.path(outdir, "fa_audit_results.csv")); fwrite(rbindlist(CNT, fill = TRUE), file.path(outdir, "fa_audit_counts.csv"))
 options(width = 250); print(R[, .(item, run = substr(run, 1, 70), spec, fe, cluster, term, events, informative_sets, chosen_exposed, or = odds_ratio, lo, hi, note)], nrows = 300)
