@@ -1,6 +1,8 @@
 data_pseudonymised/
+results_reproduced/
 reproduced*/
-__pycache__/
 .DS_Store
-raw/kaggle/data_*
-coach_retry/*.gz
+data_sources/raw/kaggle/data_*
+data_sources/coach_retry/*.gz
+study2_fa_reports/raw/
+study2_fa_reports/pages/

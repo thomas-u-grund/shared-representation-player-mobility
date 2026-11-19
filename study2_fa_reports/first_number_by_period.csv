@@ -1,0 +1,15 @@
+period,definition,history_periods,history_from,focal_signings,agent_on_club_side_before,share_club_side,of_which_via_renewal,club_only_before,share_club_only,player_side_only_before,share_player_only,no_earlier_dealing,focal_deal_also_club_side,club_side_extra_from_same_period_dates
+2019-20,strict: permanent transfer in,4,2015-16,348,69,0.198,0,23,0.066,5,0.014,274,317,30
+2019-20,broad: + new registration,4,2015-16,926,202,0.218,0,44,0.048,14,0.015,710,763,73
+2020-21,strict: permanent transfer in,5,2015-16,296,86,0.291,19,24,0.081,5,0.017,205,274,
+2020-21,broad: + new registration,5,2015-16,966,263,0.272,50,53,0.055,31,0.032,672,765,
+2021-22,strict: permanent transfer in,6,2015-16,348,89,0.256,36,32,0.092,8,0.023,251,271,
+2021-22,broad: + new registration,6,2015-16,1116,293,0.263,94,72,0.065,27,0.024,796,733,
+2022-23,strict: permanent transfer in,7,2015-16,459,115,0.251,42,33,0.072,8,0.017,336,356,
+2022-23,broad: + new registration,7,2015-16,1212,335,0.276,119,76,0.063,43,0.035,834,738,
+2023-24,strict: permanent transfer in,8,2015-16,477,106,0.222,45,31,0.065,12,0.025,359,357,
+2023-24,broad: + new registration,8,2015-16,1428,359,0.251,122,79,0.055,80,0.056,989,854,
+2024-25,strict: permanent transfer in,9,2015-16,666,78,0.117,7,18,0.027,14,0.021,574,529,
+2024-25,broad: + new registration,9,2015-16,1869,258,0.138,44,48,0.026,69,0.037,1542,1103,
+2025-26,strict: permanent transfer in,10,2015-16,691,115,0.166,32,23,0.033,25,0.036,551,556,
+2025-26,broad: + new registration,10,2015-16,2042,372,0.182,122,61,0.03,133,0.065,1537,1150,
