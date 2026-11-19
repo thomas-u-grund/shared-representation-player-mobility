@@ -1,6 +1,7 @@
 # Re-run every analysis of the paper on data/ and compare the results with results/.
-# Usage (from the repository root):  Rscript run_all.R [output_dir]
+# Usage (from the repository root):  Rscript run_all.R [output_dir] [paper_dir]
 #   output_dir  where result tables, figures and logs are written (default: results_reproduced/)
+# Run time: about 12 minutes on a laptop with four free cores (about 30 minutes with N_JOBS=1).
 #   N_JOBS      environment variable: number of scripts run in parallel (default: min(4, cores - 1); 1 on Windows)
 args <- commandArgs(TRUE)
 repo <- normalizePath(dirname(gsub("~+~", " ", sub("--file=", "", grep("--file=", commandArgs(FALSE), value = TRUE)[1]), fixed = TRUE)))
