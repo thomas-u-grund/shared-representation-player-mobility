@@ -11,7 +11,7 @@ Rscript run_all.R          # about 12 minutes on four cores; writes results_repr
 ```
 
 Needs R 4.x with `data.table`, `survival`, `readr`, `stringi`, `jsonlite`, `ggplot2`, `xml2`, `zip`. The script re-estimates every model of both
-studies, builds every table (Tables 1–4, Online Appendix A1–A2 and B1–B12, written to `results_reproduced/paper_tables.md`),
+studies, builds every table (Tables 1–6, Online Appendix A1–A2 and B1–B12, written to `results_reproduced/paper_tables.md`),
 and compares each estimate with `results/`: it stops if any odds ratio differs by more than 0.2%.
 With the paper sources, `Rscript run_all.R <output_dir> <paper_dir>` also builds the Word and PDF files (needs `pandoc` and LibreOffice).
 

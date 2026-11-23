@@ -19,10 +19,10 @@ label (`label_lo`, `label_hi`) and by player (`player_id_lo`, `player_id_hi`).
 | `club_resources_results.csv` | `11_club_resources.R` |
 | `co_client_background_results.csv`, `co_client_background_counts.csv` | `12_co_client_background.R` (Online Appendix B5) |
 | `agency_concentration.csv`, `agency_concentration_results.csv`, `league_heterogeneity.csv`, `league_results_by_league.csv` | `13_agency_concentration_leagues.R` (Online Appendix B6, B7) |
-| `fa_choice_results.csv` | `code/study2/fa_choice_model.R` (Study 2: Table 4 and B12; odds ratios with 95% CI clustered by intermediary, columns `lo`, `hi`) |
+| `fa_choice_results.csv` | `code/study2/fa_choice_model.R` (Study 2: Tables 4 and 5 and B12; odds ratios with 95% CI clustered by intermediary, columns `lo`, `hi`) |
 | `fa_audit_results.csv`, `fa_audit_counts.csv` | `code/study2/fa_audit_model.R` (Study 2: renewal model, one observation per signing, club-by-period effects, link audit) |
 | `table_estimates.csv` | `code/report/make_tables.R` (rows of the paper’s tables) |
-| `fa_balance_results.csv`, `fa_balance_counts.csv` | `code/study2/fa_balance_model.R` (Study 2: matched intermediaries, leave-out of the ten largest intermediaries, Premier League against EFL, fitted probabilities; Online Appendix B9; specified in `rebuild_from_raw/study2/audit/PRESPEC.md` before it was run) |
+| `fa_balance_results.csv`, `fa_balance_counts.csv` | `code/study2/fa_balance_model.R` (Study 2: matched intermediaries (Table 6), leave-out of the ten largest intermediaries, Premier League against EFL, fitted probabilities; Online Appendix B9; specified in `rebuild_from_raw/study2/audit/PRESPEC.md` before it was run) |
 | `fa_choice_informative_events.csv` | `code/study2/fa_choice_model.R` (events and alternatives per Study 2 run) |
 | `download_manifest.csv`, `winter_models.csv` | Provenance and the January backcast models, read by the table builder (Online Appendix A1; not reported in the paper); see `rebuild_from_raw/README.md` |
 
