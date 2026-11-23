@@ -29,7 +29,7 @@ chosen <- merge(merge(club[chosen == 1, .(event_id, summer, candidate_club)], co
 cs <- chosen[screened == TRUE, .N, by = summer][order(summer)]; stopifnot(sum(cs$N) == 2000)
 sample <- lapply(sort(unique(e$summer)), function(y) { g <- e[summer == y]; c(y, n0(nrow(g)), n0(sum(g$baseline_match)), n0(sum(g$known_agent)), n0(sum(g$screened)), n0(cs[summer == y, N])) })
 sample[[length(sample) + 1]] <- c("Total", n0(nrow(e)), n0(sum(e$baseline_match)), n0(sum(e$known_agent)), n0(sum(e$screened)), n0(sum(cs$N)))
-tables <- list(SAMPLE_TABLE = table_md("Table 1. Transfer sample", c("Summer", "Recorded moves", "Mover in release", "Named representative", "Return screen", "Club sample"), sample,
+tables <- list(SAMPLE_TABLE = table_md("Table 1. Transfer sample in Europe’s top leagues, summers 2023–25", c("Summer", "Recorded moves", "Mover in release", "Named representative", "Return screen", "Club sample"), sample,
   "Counts are transfer events. Named representative includes labels carried forward from earlier pre-window releases. The return screen drops flagged likely returns and loan-to-buy conversions and retains new loans."))
 headers <- c("Specification", "Events", "Odds ratio", "95% CI")
 cl <- list(c("Club baseline", "Roster coverage"), c("Club adjusted", "Coverage, nationality and football fit"), c("Club fixed effects", "Destination club fixed effects"),
