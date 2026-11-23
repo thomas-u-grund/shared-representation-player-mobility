@@ -1,6 +1,6 @@
-# Collect the estimates reported in the paper's tables into table_estimates.csv and draw Figure B1 (specification ladder).
+# Collect the estimates reported in the paper's tables into table_estimates.csv.
 # Usage: Rscript code/report/make_tables.R <results_dir>   (the directory holding the result tables written by code/study1/ and code/study2/; the outputs go there too)
-suppressPackageStartupMessages({library(data.table); library(ggplot2)})
+suppressPackageStartupMessages(library(data.table))
 dir <- commandArgs(TRUE)[1]
 rf <- function(f) fread(file.path(dir, f))
 get <- function(f, mod, trm) { d <- rf(f); r <- d[d$model == mod & d$term == trm]; stopifnot(nrow(r) == 1); c(r$events, r$odds_ratio, r$label_lo, r$label_hi) }
@@ -58,20 +58,4 @@ r <- d[model == "main sample: agency share + nationality x league FE" & term == 
 rows[[length(rows) + 1]] <- data.table(block = "league", label = "League model, main sample, agency concentration (per 10 pp of clients), nationality-by-league effects", events = as.integer(r$events), odds_ratio = r$odds_ratio, lo = r$label_lo, hi = r$label_hi, source = "league_results.csv")
 R <- rbindlist(rows); fwrite(R, file.path(dir, "table_estimates.csv"))
 
-theme_fig <- theme_minimal(base_size = 9) + theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_blank(), panel.grid.minor = element_blank(), axis.text = element_text(colour = "black"))
-draw <- function(items, file, w, h, xlim, colours, xlab = "Odds ratio or ratio of odds ratios (95% CI); null value = 1") {
-  items[, y := rev(seq_len(.N))]
-  p <- ggplot(items, aes(y = y, colour = kind)) + geom_vline(xintercept = 1, linetype = "dashed", colour = "grey40", linewidth = .3) +
-    geom_linerange(aes(xmin = lo, xmax = hi), linewidth = .7) + geom_point(aes(x = odds_ratio, shape = kind), size = 2) +
-    scale_y_continuous(breaks = items$y, labels = items$label) + scale_colour_manual(values = colours) + scale_shape_manual(values = c(a = 16, b = 17, c = 18, main = 16, sens = 16)) +
-    coord_cartesian(xlim = xlim) + labs(x = xlab, y = NULL) + theme_fig + theme(legend.position = "none", axis.line.x = element_line(colour = "black", linewidth = .3), axis.ticks.x = element_line(colour = "black", linewidth = .3))
-  ggsave(file.path(dir, file), p, width = w, height = h, dpi = 300)
-}
-b <- fread(file.path(dir, "model_results.csv"))[term == "same"]
-pick <- function(m) { r <- b[model == m]; c(r$odds_ratio, r$label_lo, r$label_hi) }
-spec <- list(c("Roster coverage only", "Club baseline"), c("+ nationality and fit", "Club adjusted"), c("+ club fixed effects", "Club fixed effects"), c("Club-by-summer FE", "Club by summer fixed effects"),
-             c("+ three-year flows (preferred)", "Club past flows"), c("Club-by-summer FE + flows", "Club by summer past flows"), c("Omit 30 June / 1 July + flows", "Club past flows excluding turn of July"))
-it <- rbindlist(lapply(spec, function(s) { v <- pick(s[2]); data.table(label = s[1], odds_ratio = v[1], lo = v[2], hi = v[3], kind = "main") }))
-sens <- R[block == "sensitivity" & !startsWith(label, "Main sample, omit"), .(label, odds_ratio, lo, hi, kind = "sens")]
-draw(rbind(it, sens), "figureB1_specifications.png", 7.2, 6.2, c(0.85, 2.3), c(main = "#1f4e79", sens = "#b5651d"), xlab = "Odds ratio (95% CI)")
-cat("wrote table_estimates.csv and the figure to", dir, "\n")
+cat("wrote table_estimates.csv to", dir, "\n")

@@ -1,0 +1,23 @@
+item,run,term,events,clusters,odds_ratio,lo,hi,p
+B1,"own indicator alone, matched sample",any_prior,626,191,1.524723,1.233282,1.885036,9.73e-05
+B1,own + any of three matched intermediaries,own,626,191,1.523785,1.232589,1.883776,9.92e-05
+B1,own + any of three matched intermediaries,matched,626,191,1.035018,0.845757,1.266632,0.738
+B1,own + any of three matched intermediaries,ratio own/matched,626,191,1.47223,1.094887,1.979621,0.0105
+B1,own + closest matched intermediary,own,626,191,1.522228,1.230356,1.88334,0.000109
+B1,own + closest matched intermediary,matched,626,191,1.082261,0.878409,1.333422,0.458
+B1,own + closest matched intermediary,ratio own/matched,626,191,1.406526,1.028798,1.922938,0.0325
+B2,all intermediaries (primary),any_prior,1451,674,1.778035,1.485712,2.127874,3.38e-10
+B2,dropping IMSC000239,any_prior,1377,673,1.797627,1.491927,2.165966,6.97e-10
+B2,dropping IMSC000059,any_prior,1381,673,1.817164,1.511225,2.185039,2.15e-10
+B2,dropping IMSC000058,any_prior,1418,673,1.768539,1.467184,2.131791,2.2e-09
+B2,dropping IMSC000319,any_prior,1423,673,1.737237,1.452197,2.078226,1.54e-09
+B2,dropping IMSC000013,any_prior,1429,673,1.777324,1.478986,2.135842,8.55e-10
+B2,dropping IMS000212,any_prior,1432,673,1.746065,1.457593,2.091627,1.45e-09
+B2,dropping IMS000208,any_prior,1436,673,1.784871,1.485487,2.144593,6.23e-10
+B2,dropping IMSC000597,any_prior,1436,673,1.809675,1.511978,2.165987,9.9e-11
+B2,dropping IMS001285,any_prior,1436,673,1.794612,1.493866,2.155903,4.13e-10
+B2,dropping IMS001805,any_prior,1437,673,1.762358,1.468291,2.11532,1.17e-09
+B2,dropping all ten,any_prior,1146,664,1.784452,1.4206,2.241496,6.44e-07
+B3,"by division, primary",any_prior in PL,1451,674,2.310155,1.634491,3.265125,2.1e-06
+B3,"by division, primary",any_prior in EFL,1451,674,1.579156,1.256346,1.984909,9.01e-05
+B3,"by division, primary",Wald test of equality across divisions,1451,2.88968801303289,,,,0.0891

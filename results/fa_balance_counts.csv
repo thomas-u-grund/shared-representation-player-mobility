@@ -1,0 +1,15 @@
+item,period,events,focal_intermediaries,with_3clubs,matched,events_matched,mean_sim,mean_sim_closest,agent_key,N,measure,with_coefficient,coefficient_zero,chosen_exposed_share
+B1,2020-21,296,193,61,60,138,0.978223577626663,0.984760632356718,,,,,,
+B1,2021-22,348,235,101,101,204,0.981907077906467,0.987556926706982,,,,,,
+B1,2022-23,459,290,131,131,284,0.981788406594622,0.987828795351973,,,,,,
+B2,,,,,,,,,IMSC000239,74,,,,
+B2,,,,,,,,,IMSC000059,70,,,,
+B2,,,,,,,,,IMSC000058,33,,,,
+B2,,,,,,,,,IMSC000319,28,,,,
+B2,,,,,,,,,IMSC000013,22,,,,
+B2,,,,,,,,,IMS000212,19,,,,
+B2,,,,,,,,,IMS000208,15,,,,
+B2,,,,,,,,,IMSC000597,15,,,,
+B2,,,,,,,,,IMS001285,15,,,,
+B2,,,,,,,,,IMS001805,14,,,,
+B3,,889,,,,,,,,,mean fitted probability of choosing an exposed club (events with an exposed alternative),0.361079865016584,0.279071517196026,0.361079865016873

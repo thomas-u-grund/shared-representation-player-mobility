@@ -1,6 +1,6 @@
 # Re-run every analysis of the paper on data/ and compare the results with results/.
 # Usage (from the repository root):  Rscript run_all.R [output_dir] [paper_dir]
-#   output_dir  where result tables, figures and logs are written (default: results_reproduced/)
+#   output_dir  where result tables and logs are written (default: results_reproduced/)
 # Run time: about 12 minutes on a laptop with four free cores (about 30 minutes with N_JOBS=1).
 #   N_JOBS      environment variable: number of scripts run in parallel (default: min(4, cores - 1); 1 on Windows)
 args <- commandArgs(TRUE)
@@ -33,10 +33,10 @@ analysis <- c("01_main_models.R", "02_timing_fees_contract.R", "03_matched_agenc
               "07_season_comparison.R", "08_move_type.R", "09_matched_agencies_value.R", "10_label_audit.R", "11_club_resources.R", "12_co_client_background.R", "13_agency_concentration_leagues.R")
 jobs <- lapply(analysis, function(s) c(file.path("study1", s), shQuote(data), shQuote(out)))
 # Study 2 (English FA records): re-estimated from the harmonised transaction table data/study2/fa_transactions_long.csv (the PDF extraction is optional, see rebuild_from_raw/README.md)
-jobs <- c(jobs, lapply(c("study2/fa_choice_model.R", "study2/fa_audit_model.R"), function(s) c(s, shQuote(out))))
+jobs <- c(jobs, lapply(c("study2/fa_choice_model.R", "study2/fa_audit_model.R", "study2/fa_balance_model.R"), function(s) c(s, shQuote(out))))
 run_jobs(jobs)
 
-# 2. tables, figures and the paper
+# 2. tables and the paper
 run("report/make_tables.R", shQuote(out))
 run("report/render_manuscript.R", shQuote(paper), shQuote(out), shQuote(data), shQuote(file.path(repo, "results", "download_manifest.csv")), shQuote(out))
 
@@ -57,5 +57,6 @@ chk("table_estimates.csv", c("block", "label"))
 chk("baseline_share.csv", "sample", "observed_share")
 chk("fa_choice_results.csv", c("run", "model", "fixed_effects", "term"))                      # Study 2, Table 4 and B13
 chk("fa_audit_results.csv", c("item", "run", "spec", "fe", "cluster", "term"))                # Study 2 audit, renewal model and further specifications
+chk("fa_balance_results.csv", c("item", "run", "term"))                                       # Study 2 matched intermediaries, leave-out and divisions
 cat("All re-estimates agree with the stored results.\n")
 if (!nzchar(Sys.getenv("KEEP_CACHE"))) unlink(cache, recursive = TRUE)

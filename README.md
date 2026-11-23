@@ -1,6 +1,6 @@
 # Replication package: Who Joins Which Club? Football Agents and Player Recruitment in European Men’s Football
 
-Code, data and results for the paper (submitted to the *International Review for the Sociology of Sport*). Study 1 uses pre-window rosters of
+Code, data and results for the paper (submitted to *Soccer & Society*). Study 1 uses pre-window rosters of
 14 European men’s top leagues for the summers of 2023–2025 (2,000 transfers); Study 2 uses the English FA’s intermediary transaction reports
 (1,381 signings, 2019–20 to 2022–23).
 
@@ -11,17 +11,19 @@ Rscript run_all.R          # about 12 minutes on four cores; writes results_repr
 ```
 
 Needs R 4.x with `data.table`, `survival`, `readr`, `stringi`, `jsonlite`, `ggplot2`, `xml2`, `zip`. The script re-estimates every model of both
-studies, builds every table (Tables 1–4, Online Appendix A1–A2, B1–B16, written to `results_reproduced/paper_tables.md`) and the two figures,
+studies, builds every table (Tables 1–4, Online Appendix A1–A2 and B1–B12, written to `results_reproduced/paper_tables.md`),
 and compares each estimate with `results/`: it stops if any odds ratio differs by more than 0.2%.
 With the paper sources, `Rscript run_all.R <output_dir> <paper_dir>` also builds the Word and PDF files (needs `pandoc` and LibreOffice).
+
+Analyses `08_move_type`, `10_label_audit`, `11_club_resources` and the January backcast models (`winter_models.csv`) are kept for completeness but are not reported in the paper or its Online Appendix.
 
 ## Layout
 
 | Folder | Contents |
 |---|---|
 | `run_all.R` | The one command above |
-| `code/study1/`, `code/study2/` | Analysis scripts: `01`–`13` for Study 1 (file names say what they do; outputs are listed in `results/README.md`), two scripts for Study 2 |
-| `code/lib/`, `code/report/` | Shared helpers; table, figure and document builders |
+| `code/study1/`, `code/study2/` | Analysis scripts: `01`–`13` for Study 1 (file names say what they do; outputs are listed in `results/README.md`), three scripts for Study 2 (the main model, the audit and renewal checks, and the matched-intermediary, leave-out and division analyses) |
+| `code/lib/`, `code/report/` | Shared helpers; table and document builders |
 | `data/study1/` | Model-ready Study 1 inputs with random player and representative codes (included; see below) |
 | `data/study2/` | Study 2 inputs: the harmonised FA transaction table and the division of each club |
 | `results/` | The stored results the paper reports, and `results/README.md` |
